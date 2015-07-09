@@ -15,6 +15,7 @@
 		945533061B4ED3A500FDDACD /* CocoaLibSpotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9455330B1B4ED5D400FDDACD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945533091B4ED5D400FDDACD /* MainMenu.xib */; };
 		9455330E1B4ED61600FDDACD /* NSString+Encoded.m in Sources */ = {isa = PBXBuildFile; fileRef = 9455330D1B4ED61600FDDACD /* NSString+Encoded.m */; };
+		945533101B4EDA8500FDDACD /* 5sec.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9455330F1B4EDA8500FDDACD /* 5sec.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		9455330A1B4ED5D400FDDACD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9455330C1B4ED61600FDDACD /* NSString+Encoded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encoded.h"; sourceTree = "<group>"; };
 		9455330D1B4ED61600FDDACD /* NSString+Encoded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encoded.m"; sourceTree = "<group>"; };
+		9455330F1B4EDA8500FDDACD /* 5sec.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5sec.mp3; sourceTree = "<group>"; };
 		9487E9A11B4D77A400D064E2 /* TagLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TagLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 		945532C91B4ECE6600FDDACD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9455330F1B4EDA8500FDDACD /* 5sec.mp3 */,
 				945532CA1B4ECE6600FDDACD /* main.m */,
 			);
 			name = "Supporting Files";
@@ -286,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945533101B4EDA8500FDDACD /* 5sec.mp3 in Resources */,
 				945532D01B4ECE6600FDDACD /* Assets.xcassets in Resources */,
 				9455330B1B4ED5D400FDDACD /* MainMenu.xib in Resources */,
 			);

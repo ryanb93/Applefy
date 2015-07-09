@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C64E84BEEC29CE48812B67011FC0F4551350BF2F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C" : 0,
+    "18209CF2011AB3382E179553C574338285D94ACE" : 0,
+    "C64E84BEEC29CE48812B67011FC0F4551350BF2F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0CF4A323-52FA-476D-A9BF-3C90DC1A797A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C" : "cocoalibspotify\/",
+    "18209CF2011AB3382E179553C574338285D94ACE" : "TagLib\/TagLib.framework\/",
+    "C64E84BEEC29CE48812B67011FC0F4551350BF2F" : "Applefy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Applefy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Applefy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:nickludlam\/TagLib.framework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "18209CF2011AB3382E179553C574338285D94ACE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:spotify\/cocoalibspotify.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ryanb93\/Applefy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C64E84BEEC29CE48812B67011FC0F4551350BF2F"
+    }
+  ]
+}
