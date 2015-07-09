@@ -38,6 +38,7 @@
 @property (weak) IBOutlet NSArrayController *trackArrayController;
 @property (weak) IBOutlet NSPopUpButton *playlistButton;
 @property (weak) IBOutlet NSButton *saveButton;
+@property (weak) IBOutlet NSButton *coffeeButton;
 
 -(SPSession *)session;
 
@@ -49,5 +50,6 @@
 @property (nonatomic, readwrite, strong) SPPlaybackManager *playbackManager;
 
 - (IBAction)savePlaylist:(id)sender;
+- (IBAction)buyCoffee:(id)sender;
 
 @end

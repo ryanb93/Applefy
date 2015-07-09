@@ -491,6 +491,7 @@
 				945532D71B4ECE6600FDDACD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

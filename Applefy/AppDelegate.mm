@@ -193,4 +193,9 @@
     
 }
 
+- (IBAction)buyCoffee:(id)sender {
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PVGE2UTGDJK62"]];
+}
+
+
 @end
