@@ -151,6 +151,8 @@
 
 - (IBAction)savePlaylist:(id)sender {
     
+    [self.saveButton setEnabled:NO];
+    
     BOOL isDir;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -161,7 +163,7 @@
             NSLog(@"Error: Create folder failed %@", path);
 
     NSURL *emptyMP3Path = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/5sec.mp3", [[NSBundle mainBundle] resourcePath]]];
-
+    
     for (SPPlaylistItem *item in self.trackArrayController.arrangedObjects) {
         
         SPTrack *track = item.item;
@@ -185,6 +187,8 @@
         f.save();
 
     }
+    
+    [self.saveButton setEnabled:YES];
     
     
 }
