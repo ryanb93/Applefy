@@ -179,6 +179,7 @@
         TagLib::FileRef f([[fileMP3 path] cStringUsingEncoding:NSUTF8StringEncoding]);
         f.tag()->setTitle([title cStringUsingEncoding:NSUTF8StringEncoding]);
         f.tag()->setArtist([artist cStringUsingEncoding:NSUTF8StringEncoding]);
+        f.tag()->setGenre("");
         f.tag()->setAlbum([album cStringUsingEncoding:NSUTF8StringEncoding]);
         f.tag()->setTrack((int)num_track);
         f.tag()->setYear((int)year);
