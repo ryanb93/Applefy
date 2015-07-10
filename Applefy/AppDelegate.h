@@ -40,14 +40,14 @@
 @property (weak) IBOutlet NSButton *saveButton;
 @property (weak) IBOutlet NSButton *coffeeButton;
 
+@property (nonatomic, strong) NSArray *flatPlaylists;
+
 -(SPSession *)session;
 
 - (IBAction)login:(id)sender;
 - (IBAction)quitFromLoginSheet:(id)sender;
 
 #pragma mark -
-
-@property (nonatomic, readwrite, strong) SPPlaybackManager *playbackManager;
 
 - (IBAction)savePlaylist:(id)sender;
 - (IBAction)buyCoffee:(id)sender;

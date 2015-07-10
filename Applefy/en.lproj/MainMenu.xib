@@ -424,7 +424,7 @@
                         <rect key="frame" x="75" y="316" width="438" height="26"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <animations/>
-                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="537">
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" enabled="NO" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="537">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="538">
@@ -436,17 +436,9 @@
                             </menu>
                         </popUpButtonCell>
                         <connections>
-                            <binding destination="586" name="content" keyPath="arrangedObjects" id="610">
-                                <dictionary key="options">
-                                    <bool key="NSInsertsNullPlaceholder" value="YES"/>
-                                </dictionary>
-                            </binding>
-                            <binding destination="586" name="contentValues" keyPath="arrangedObjects.name" previousBinding="610" id="611">
-                                <dictionary key="options">
-                                    <bool key="NSInsertsNullPlaceholder" value="YES"/>
-                                </dictionary>
-                            </binding>
-                            <binding destination="586" name="selectedIndex" keyPath="selectionIndex" previousBinding="611" id="621"/>
+                            <binding destination="586" name="content" keyPath="arrangedObjects" id="LGt-bc-esH"/>
+                            <binding destination="586" name="contentValues" keyPath="arrangedObjects.name" previousBinding="LGt-bc-esH" id="xEm-LC-c5G"/>
+                            <binding destination="586" name="selectedIndex" keyPath="selectionIndex" previousBinding="xEm-LC-c5G" id="F0w-KT-r2U"/>
                         </connections>
                     </popUpButton>
                     <button verticalHuggingPriority="750" id="lZO-CR-Z2r">
@@ -480,13 +472,18 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <arrayController objectClassName="SPPlaylist" editable="NO" automaticallyPreparesContent="YES" id="586" userLabel="Playlist Array Controller">
+        <arrayController objectClassName="SPPlaylist" editable="NO" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="586" userLabel="Playlist Array Controller">
             <declaredKeys>
                 <string>name</string>
                 <string>items</string>
             </declaredKeys>
             <connections>
-                <binding destination="494" name="contentArray" keyPath="session.userPlaylists.playlists" id="590"/>
+                <binding destination="494" name="contentArray" keyPath="flatPlaylists" id="bCa-4L-VVb">
+                    <dictionary key="options">
+                        <bool key="NSDeletesObjectsOnRemove" value="YES"/>
+                        <bool key="NSHandlesContentAsCompoundValue" value="YES"/>
+                    </dictionary>
+                </binding>
             </connections>
         </arrayController>
         <arrayController objectClassName="SPPlaylistItem" id="612" userLabel="Items Array Controller">

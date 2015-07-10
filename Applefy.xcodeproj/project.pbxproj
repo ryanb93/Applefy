@@ -14,9 +14,9 @@
 		945533051B4ED3A500FDDACD /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */; };
 		945533061B4ED3A500FDDACD /* CocoaLibSpotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9455330B1B4ED5D400FDDACD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945533091B4ED5D400FDDACD /* MainMenu.xib */; };
-		9455330E1B4ED61600FDDACD /* NSString+Encoded.m in Sources */ = {isa = PBXBuildFile; fileRef = 9455330D1B4ED61600FDDACD /* NSString+Encoded.m */; };
 		945533101B4EDA8500FDDACD /* 5sec.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9455330F1B4EDA8500FDDACD /* 5sec.mp3 */; };
 		945533131B4EEC4000FDDACD /* TagLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945532B51B4ECC7300FDDACD /* TagLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		94705EE61B5007350054F4CD /* NSString+TStringAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94705EE51B5007350054F4CD /* NSString+TStringAdditions.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,9 +96,9 @@
 		945532DE1B4ED0CB00FDDACD /* taglib_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = taglib_config.h; sourceTree = "<group>"; };
 		945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CocoaLibSpotify Mac Framework.xcodeproj"; path = "../cocoalibspotify/Mac Framework/CocoaLibSpotify Mac Framework.xcodeproj"; sourceTree = "<group>"; };
 		9455330A1B4ED5D400FDDACD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		9455330C1B4ED61600FDDACD /* NSString+Encoded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Encoded.h"; sourceTree = "<group>"; };
-		9455330D1B4ED61600FDDACD /* NSString+Encoded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Encoded.m"; sourceTree = "<group>"; };
 		9455330F1B4EDA8500FDDACD /* 5sec.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5sec.mp3; sourceTree = "<group>"; };
+		94705EE41B5007350054F4CD /* NSString+TStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TStringAdditions.h"; sourceTree = "<group>"; };
+		94705EE51B5007350054F4CD /* NSString+TStringAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+TStringAdditions.mm"; sourceTree = "<group>"; };
 		9487E9A11B4D77A400D064E2 /* TagLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TagLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,8 +170,8 @@
 			children = (
 				945532C61B4ECE6600FDDACD /* AppDelegate.h */,
 				945532DA1B4ED04F00FDDACD /* AppDelegate.mm */,
-				9455330C1B4ED61600FDDACD /* NSString+Encoded.h */,
-				9455330D1B4ED61600FDDACD /* NSString+Encoded.m */,
+				94705EE41B5007350054F4CD /* NSString+TStringAdditions.h */,
+				94705EE51B5007350054F4CD /* NSString+TStringAdditions.mm */,
 				945532DE1B4ED0CB00FDDACD /* taglib_config.h */,
 				945533091B4ED5D400FDDACD /* MainMenu.xib */,
 				945532CF1B4ECE6600FDDACD /* Assets.xcassets */,
@@ -313,8 +313,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				945532DB1B4ED04F00FDDACD /* AppDelegate.mm in Sources */,
-				9455330E1B4ED61600FDDACD /* NSString+Encoded.m in Sources */,
 				945532CB1B4ECE6600FDDACD /* main.m in Sources */,
+				94705EE61B5007350054F4CD /* NSString+TStringAdditions.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -446,7 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;

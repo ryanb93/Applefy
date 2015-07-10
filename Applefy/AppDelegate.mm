@@ -30,18 +30,9 @@
 #import <TagLib/taglib.h>
 #import <TagLib/fileref.h>
 #import <TagLib/tag.h>
-#import "NSString+Encoded.h"
+#import "NSString+TStringAdditions.h"
 
 @implementation AppDelegate
-
-@synthesize window = _window;
-
-@synthesize userNameField;
-@synthesize passwordField;
-@synthesize loginSheet;
-@synthesize trackTable;
-@synthesize trackArrayController;
-@synthesize playbackManager;
 
 -(void)applicationWillFinishLaunching:(NSNotification *)notification {
 
@@ -57,8 +48,6 @@
 	}
 
 	[[SPSession sharedSession] setDelegate:self];
-	self.playbackManager = [[SPPlaybackManager alloc] initWithPlaybackSession:[SPSession sharedSession]];
-
 	[self didChangeValueForKey:@"session"];
 	[self.window center];
 	[self.window orderFront:nil];
@@ -105,11 +94,11 @@
 - (IBAction)login:(id)sender {
 	
 	// Invoked by clicking the "Login" button in the UI.
-	if ([[userNameField stringValue] length] > 0 &&
-		[[passwordField stringValue] length] > 0) {
+	if ([[self.userNameField stringValue] length] > 0 &&
+		[[self.passwordField stringValue] length] > 0) {
 		
-		[[SPSession sharedSession] attemptLoginWithUserName:[userNameField stringValue]
-												   password:[passwordField stringValue]];
+		[[SPSession sharedSession] attemptLoginWithUserName:[self.userNameField stringValue]
+												   password:[self.passwordField stringValue]];
 	} else {
 		NSBeep();
 	}
@@ -122,6 +111,13 @@
 	// Invoked by SPSession after a successful login.
 	[self.loginSheet orderOut:self];
 	[NSApp endSheet:self.loginSheet];
+    
+    [SPAsyncLoading waitUntilLoaded:aSession timeout:kSPAsyncLoadingDefaultTimeout then:^(NSArray *loaded, NSArray *notLoaded) {
+        [SPAsyncLoading waitUntilLoaded:aSession.userPlaylists timeout:kSPAsyncLoadingDefaultTimeout then:^(NSArray *loaded, NSArray *notLoaded) {
+            [self setFlatPlaylists:aSession.userPlaylists.flattenedPlaylists];
+            [self.playlistButton setEnabled:YES];
+        }];
+    }];
 }
 
 -(void)session:(SPSession *)aSession didFailToLoginWithError:(NSError *)error; {
@@ -156,7 +152,7 @@
     BOOL isDir;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
-    NSString *path = [NSString stringWithFormat:@"%@/Applefy/%@", NSHomeDirectory(), [self.playlistButton.titleOfSelectedItem URLEncodedString_ch]];
+    NSString *path = [NSString stringWithFormat:@"%@/Applefy/%@", NSHomeDirectory(), [self.playlistButton.titleOfSelectedItem stringByReplacingOccurrencesOfString:@"/" withString:@" "]];
     
     if(![fileManager fileExistsAtPath:path isDirectory:&isDir])
         if(![fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:NULL])
@@ -166,26 +162,27 @@
     
     for (SPPlaylistItem *item in self.trackArrayController.arrangedObjects) {
         
-        SPTrack *track = item.item;
+        if([item.item isKindOfClass:[SPTrack class]]) {
+            
+            SPTrack *track = item.item;
+            NSString *title = track.name;
+            NSString *fileName = [title stringByReplacingOccurrencesOfString:@"/" withString:@" "];
+            NSString *artist = [[[track artists] objectAtIndex:0] name];
+            NSString *album = track.album.name;
+            NSUInteger year = track.album.year;
+            NSUInteger num_track = track.trackNumber;
         
-        NSString *title = track.name;
-        NSString *fileName = [title URLEncodedString_ch];
-        NSString *artist = [[[track artists] objectAtIndex:0] name];
-        NSString *album = track.album.name;
-        NSUInteger year = track.album.year;
-        NSUInteger num_track = track.trackNumber;
-        
-        NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@.mp3", path, fileName]];
-        [[NSFileManager defaultManager] copyItemAtURL:emptyMP3Path toURL:fileMP3 error:nil];
-        
-        TagLib::FileRef f([[fileMP3 path] cStringUsingEncoding:NSUTF8StringEncoding]);
-        f.tag()->setTitle([title cStringUsingEncoding:NSUTF8StringEncoding]);
-        f.tag()->setArtist([artist cStringUsingEncoding:NSUTF8StringEncoding]);
-        f.tag()->setAlbum([album cStringUsingEncoding:NSUTF8StringEncoding]);
-        f.tag()->setTrack((int)num_track);
-        f.tag()->setYear((int)year);
-        f.save();
-
+            NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@.mp3", path, fileName]];
+            [[NSFileManager defaultManager] copyItemAtURL:emptyMP3Path toURL:fileMP3 error:nil];
+            
+            TagLib::FileRef f([[fileMP3 path] UTF8String]);
+            f.tag()->setTitle(NSStringToTagLibString(title));
+            f.tag()->setArtist(NSStringToTagLibString(artist));
+            f.tag()->setAlbum(NSStringToTagLibString(album));
+            f.tag()->setTrack((int)num_track);
+            f.tag()->setYear((int)year);
+            f.save();
+        }
     }
     
     [self.saveButton setEnabled:YES];
