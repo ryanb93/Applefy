@@ -160,7 +160,11 @@
 
     NSURL *emptyMP3Path = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/5sec.mp3", [[NSBundle mainBundle] resourcePath]]];
     
+    NSNumber *playlistIndex = @(0);
+    
     for (SPPlaylistItem *item in self.trackArrayController.arrangedObjects) {
+        
+        playlistIndex = @([playlistIndex intValue] + 1);
         
         if([item.item isKindOfClass:[SPTrack class]]) {
             
@@ -172,7 +176,7 @@
             NSUInteger year = track.album.year;
             NSUInteger num_track = track.trackNumber;
         
-            NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@.mp3", path, fileName]];
+            NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@ - %@.mp3", path, [playlistIndex stringValue], fileName]];
             [[NSFileManager defaultManager] copyItemAtURL:emptyMP3Path toURL:fileMP3 error:nil];
             
             TagLib::FileRef f([[fileMP3 path] UTF8String]);
