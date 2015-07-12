@@ -2,8 +2,6 @@
 
 An OSX application to store Spotify playlists as MP3's that can be imported into iTunes to be matched by Apple Music.
 
-![]()
-
 Instructions
 ----
 
@@ -16,6 +14,10 @@ Instructions
 * Drag the MP3 files into the playlist.
 * Select all and right click. Choose 'Add to iCloud Music Library'
 * Once the songs have been registered, right click again and 'Remove download', you can now stream or download the full song using your Apple Music subscription.
+
+Development
+----
+To build the project you have to create a file called `Applefy/appkey.c`. The content must be set to the C-Code created under [Spotify Developer : My application keys](https://devaccount.spotify.com/my-account/keys/).
 
 Limitations
 ----

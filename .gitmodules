@@ -1,0 +1,6 @@
+[submodule "Applefy/CocoaLibSpotify"]
+	path = Applefy/CocoaLibSpotify
+	url = https://github.com/spotify/cocoalibspotify.git
+[submodule "Applefy/TagLib"]
+	path = Applefy/TagLib
+	url = https://github.com/einfallstoll/TagLib

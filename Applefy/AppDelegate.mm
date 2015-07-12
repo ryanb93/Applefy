@@ -27,9 +27,9 @@
 
 #import "AppDelegate.h"
 #include "appkey.c"
-#import <TagLib/taglib.h>
-#import <TagLib/fileref.h>
-#import <TagLib/tag.h>
+#import "taglib.h"
+#import "fileref.h"
+#import "tag.h"
 #import "NSString+TStringAdditions.h"
 
 @implementation AppDelegate
