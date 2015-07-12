@@ -1,0 +1,3 @@
+[submodule "Applefy/CocoaLibSpotify"]
+	path = Applefy/CocoaLibSpotify
+	url = https://github.com/spotify/cocoalibspotify.git
