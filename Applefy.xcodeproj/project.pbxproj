@@ -10,57 +10,118 @@
 		945532CB1B4ECE6600FDDACD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 945532CA1B4ECE6600FDDACD /* main.m */; };
 		945532D01B4ECE6600FDDACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 945532CF1B4ECE6600FDDACD /* Assets.xcassets */; };
 		945532DB1B4ED04F00FDDACD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945532DA1B4ED04F00FDDACD /* AppDelegate.mm */; };
-		945532DC1B4ED07400FDDACD /* TagLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945532B51B4ECC7300FDDACD /* TagLib.framework */; };
-		945533051B4ED3A500FDDACD /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */; };
-		945533061B4ED3A500FDDACD /* CocoaLibSpotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9455330B1B4ED5D400FDDACD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945533091B4ED5D400FDDACD /* MainMenu.xib */; };
 		945533101B4EDA8500FDDACD /* 5sec.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9455330F1B4EDA8500FDDACD /* 5sec.mp3 */; };
-		945533131B4EEC4000FDDACD /* TagLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 945532B51B4ECC7300FDDACD /* TagLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		94705EE61B5007350054F4CD /* NSString+TStringAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94705EE51B5007350054F4CD /* NSString+TStringAdditions.mm */; };
+		AF82B29C1B5268FB00F02219 /* appkey.c in Sources */ = {isa = PBXBuildFile; fileRef = AF82B29B1B5268FB00F02219 /* appkey.c */; };
+		AF82B8731B52709400F02219 /* TagLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF82B8721B52708C00F02219 /* TagLib.framework */; };
+		AF82BA5D1B5270A600F02219 /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF82BA3C1B5270A100F02219 /* CocoaLibSpotify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		945532B41B4ECC7300FDDACD /* PBXContainerItemProxy */ = {
+		AF82B8711B52708C00F02219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 945532AF1B4ECC7200FDDACD /* TagLib.xcodeproj */;
+			containerPortal = AF82B86C1B52708C00F02219 /* TagLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = "TagLib Framework";
+			remoteInfo = TagLib;
 		};
-		945532B61B4ECC7300FDDACD /* PBXContainerItemProxy */ = {
+		AF82BA351B5270A100F02219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 945532AF1B4ECC7200FDDACD /* TagLib.xcodeproj */;
+			containerPortal = AF82B8CB1B52709F00F02219 /* CocoaLibSpotify iOS Library.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 012AA451122197AF0012E520;
-			remoteInfo = "TagLib Bundle";
+			remoteGlobalIDString = 50AF49DC1439CBFE00E4A5EF;
+			remoteInfo = CocoaLibSpotify;
 		};
-		945533011B4ED39600FDDACD /* PBXContainerItemProxy */ = {
+		AF82BA371B5270A100F02219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */;
+			containerPortal = AF82B8CB1B52709F00F02219 /* CocoaLibSpotify iOS Library.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50D4F52B156BCDE800E237DD;
+			remoteInfo = CocoaLSTests;
+		};
+		AF82BA3B1B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82B92C1B5270A000F02219 /* CocoaLibSpotify Mac Framework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 503D630F13258041007772CA;
 			remoteInfo = CocoaLibSpotify;
 		};
-		945533031B4ED39600FDDACD /* PBXContainerItemProxy */ = {
+		AF82BA3D1B5270A100F02219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */;
+			containerPortal = AF82B92C1B5270A000F02219 /* CocoaLibSpotify Mac Framework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 504E4934155AA85400E1C0F7;
 			remoteInfo = CocoaLSTests;
 		};
-		945533071B4ED3A500FDDACD /* PBXContainerItemProxy */ = {
+		AF82BA401B5270A100F02219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 503D630E13258041007772CA;
-			remoteInfo = CocoaLibSpotify;
+			containerPortal = AF82B8ED1B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50EECB2415CABA47006E54FA;
+			remoteInfo = "Empty CocoaLibSpotify Project";
 		};
-		945533111B4EEC3300FDDACD /* PBXContainerItemProxy */ = {
+		AF82BA431B5270A100F02219 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 945532AF1B4ECC7200FDDACD /* TagLib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = "TagLib Framework";
+			containerPortal = AF82B9F11B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50EECADB15CAA82C006E54FA;
+			remoteInfo = "Empty CocoaLibSpotify Project";
+		};
+		AF82BA461B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82BA041B5270A000F02219 /* Guess The Intro.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 508464921372A93C00A9493B;
+			remoteInfo = "Guess The Intro";
+		};
+		AF82BA491B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82B9021B5270A000F02219 /* Guess The Intro.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50A0D824143AF62100458686;
+			remoteInfo = "Guess The Intro";
+		};
+		AF82BA4C1B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82B98C1B5270A000F02219 /* jukebox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FB20486AB0100D96B5E;
+			remoteInfo = jukebox;
+		};
+		AF82BA4F1B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82BA191B5270A000F02219 /* Offline Playlists.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 500D51F81461569A0009B5FB;
+			remoteInfo = "Offline Playlists";
+		};
+		AF82BA521B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82B99E1B5270A000F02219 /* Randomify.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1107320486CEB800E47090;
+			remoteInfo = Randomify;
+		};
+		AF82BA551B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82B9171B5270A000F02219 /* Simple Player.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 50AF49A81439CB6D00E4A5EF;
+			remoteInfo = "Simple Player";
+		};
+		AF82BA581B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82BA2A1B5270A000F02219 /* SimplePlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5006F14F137161D800AF4418;
+			remoteInfo = SimplePlayer;
+		};
+		AF82BA5B1B5270A100F02219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF82B9B11B5270A000F02219 /* spshell.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DD76FB20486AB0100D96B5E;
+			remoteInfo = spshell;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,8 +132,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				945533131B4EEC4000FDDACD /* TagLib.framework in Embed Frameworks */,
-				945533061B4ED3A500FDDACD /* CocoaLibSpotify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,7 +145,6 @@
 		500D52011461569A0009B5FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		500D5242146187D80009B5FB /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		500D5243146187D80009B5FB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		945532AF1B4ECC7200FDDACD /* TagLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TagLib.xcodeproj; path = "/Users/Ryan/Developer/cocoalibspotify/Mac Framework/../../TagLib/TagLib.framework/TagLib.xcodeproj"; sourceTree = "<absolute>"; };
 		945532C41B4ECE6600FDDACD /* Applefy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Applefy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		945532C61B4ECE6600FDDACD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		945532CA1B4ECE6600FDDACD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,12 +152,588 @@
 		945532D41B4ECE6600FDDACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		945532DA1B4ED04F00FDDACD /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		945532DE1B4ED0CB00FDDACD /* taglib_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = taglib_config.h; sourceTree = "<group>"; };
-		945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CocoaLibSpotify Mac Framework.xcodeproj"; path = "../cocoalibspotify/Mac Framework/CocoaLibSpotify Mac Framework.xcodeproj"; sourceTree = "<group>"; };
 		9455330A1B4ED5D400FDDACD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9455330F1B4EDA8500FDDACD /* 5sec.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5sec.mp3; sourceTree = "<group>"; };
-		94705EE41B5007350054F4CD /* NSString+TStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TStringAdditions.h"; sourceTree = "<group>"; };
-		94705EE51B5007350054F4CD /* NSString+TStringAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+TStringAdditions.mm"; sourceTree = "<group>"; };
 		9487E9A11B4D77A400D064E2 /* TagLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TagLib.framework; sourceTree = "<group>"; };
+		AF82B29B1B5268FB00F02219 /* appkey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = appkey.c; sourceTree = "<group>"; };
+		AF82B76D1B52708C00F02219 /* NSString+TStringAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TStringAdditions.h"; sourceTree = "<group>"; };
+		AF82B76E1B52708C00F02219 /* NSString+TStringAdditions.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+TStringAdditions.mm"; sourceTree = "<group>"; };
+		AF82B76F1B52708C00F02219 /* TLID3MetaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLID3MetaData.h; sourceTree = "<group>"; };
+		AF82B7701B52708C00F02219 /* TLID3MetaData.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TLID3MetaData.mm; sourceTree = "<group>"; };
+		AF82B7711B52708C00F02219 /* TLMetaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMetaData.h; sourceTree = "<group>"; };
+		AF82B7721B52708C00F02219 /* TLMetaData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLMetaData.m; sourceTree = "<group>"; };
+		AF82B7731B52708C00F02219 /* TLMP4MetaData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLMP4MetaData.h; sourceTree = "<group>"; };
+		AF82B7741B52708C00F02219 /* TLMP4MetaData.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TLMP4MetaData.mm; sourceTree = "<group>"; };
+		AF82B7751B52708C00F02219 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		AF82B7761B52708C00F02219 /* COPYING.LGPL */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.LGPL; sourceTree = "<group>"; };
+		AF82B7771B52708C00F02219 /* COPYING.MPL */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING.MPL; sourceTree = "<group>"; };
+		AF82B7791B52708C00F02219 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B77A1B52708C00F02219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF82B77B1B52708C00F02219 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AF82B77E1B52708C00F02219 /* ape-tag-format.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ape-tag-format.txt"; sourceTree = "<group>"; };
+		AF82B77F1B52708C00F02219 /* apefile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = apefile.cpp; sourceTree = "<group>"; };
+		AF82B7801B52708C00F02219 /* apefile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apefile.h; sourceTree = "<group>"; };
+		AF82B7811B52708C00F02219 /* apefooter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = apefooter.cpp; sourceTree = "<group>"; };
+		AF82B7821B52708C00F02219 /* apefooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apefooter.h; sourceTree = "<group>"; };
+		AF82B7831B52708C00F02219 /* apeitem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = apeitem.cpp; sourceTree = "<group>"; };
+		AF82B7841B52708C00F02219 /* apeitem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apeitem.h; sourceTree = "<group>"; };
+		AF82B7851B52708C00F02219 /* apeproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = apeproperties.cpp; sourceTree = "<group>"; };
+		AF82B7861B52708C00F02219 /* apeproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apeproperties.h; sourceTree = "<group>"; };
+		AF82B7871B52708C00F02219 /* apetag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = apetag.cpp; sourceTree = "<group>"; };
+		AF82B7881B52708C00F02219 /* apetag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = apetag.h; sourceTree = "<group>"; };
+		AF82B78A1B52708C00F02219 /* asfattribute.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asfattribute.cpp; sourceTree = "<group>"; };
+		AF82B78B1B52708C00F02219 /* asfattribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asfattribute.h; sourceTree = "<group>"; };
+		AF82B78C1B52708C00F02219 /* asffile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asffile.cpp; sourceTree = "<group>"; };
+		AF82B78D1B52708C00F02219 /* asffile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asffile.h; sourceTree = "<group>"; };
+		AF82B78E1B52708C00F02219 /* asfpicture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asfpicture.cpp; sourceTree = "<group>"; };
+		AF82B78F1B52708C00F02219 /* asfpicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asfpicture.h; sourceTree = "<group>"; };
+		AF82B7901B52708C00F02219 /* asfproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asfproperties.cpp; sourceTree = "<group>"; };
+		AF82B7911B52708C00F02219 /* asfproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asfproperties.h; sourceTree = "<group>"; };
+		AF82B7921B52708C00F02219 /* asftag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = asftag.cpp; sourceTree = "<group>"; };
+		AF82B7931B52708C00F02219 /* asftag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asftag.h; sourceTree = "<group>"; };
+		AF82B7941B52708C00F02219 /* audioproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = audioproperties.cpp; sourceTree = "<group>"; };
+		AF82B7951B52708C00F02219 /* audioproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audioproperties.h; sourceTree = "<group>"; };
+		AF82B7961B52708C00F02219 /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		AF82B7971B52708C00F02219 /* fileref.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fileref.cpp; sourceTree = "<group>"; };
+		AF82B7981B52708C00F02219 /* fileref.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fileref.h; sourceTree = "<group>"; };
+		AF82B79A1B52708C00F02219 /* flacfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flacfile.cpp; sourceTree = "<group>"; };
+		AF82B79B1B52708C00F02219 /* flacfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flacfile.h; sourceTree = "<group>"; };
+		AF82B79C1B52708C00F02219 /* flacmetadatablock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flacmetadatablock.cpp; sourceTree = "<group>"; };
+		AF82B79D1B52708C00F02219 /* flacmetadatablock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flacmetadatablock.h; sourceTree = "<group>"; };
+		AF82B79E1B52708C00F02219 /* flacpicture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flacpicture.cpp; sourceTree = "<group>"; };
+		AF82B79F1B52708C00F02219 /* flacpicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flacpicture.h; sourceTree = "<group>"; };
+		AF82B7A01B52708C00F02219 /* flacproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flacproperties.cpp; sourceTree = "<group>"; };
+		AF82B7A11B52708C00F02219 /* flacproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flacproperties.h; sourceTree = "<group>"; };
+		AF82B7A21B52708C00F02219 /* flacunknownmetadatablock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flacunknownmetadatablock.cpp; sourceTree = "<group>"; };
+		AF82B7A31B52708C00F02219 /* flacunknownmetadatablock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flacunknownmetadatablock.h; sourceTree = "<group>"; };
+		AF82B7A51B52708C00F02219 /* itfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = itfile.cpp; sourceTree = "<group>"; };
+		AF82B7A61B52708C00F02219 /* itfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = itfile.h; sourceTree = "<group>"; };
+		AF82B7A71B52708C00F02219 /* itproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = itproperties.cpp; sourceTree = "<group>"; };
+		AF82B7A81B52708C00F02219 /* itproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = itproperties.h; sourceTree = "<group>"; };
+		AF82B7AA1B52708C00F02219 /* modfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = modfile.cpp; sourceTree = "<group>"; };
+		AF82B7AB1B52708C00F02219 /* modfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modfile.h; sourceTree = "<group>"; };
+		AF82B7AC1B52708C00F02219 /* modfilebase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = modfilebase.cpp; sourceTree = "<group>"; };
+		AF82B7AD1B52708C00F02219 /* modfilebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modfilebase.h; sourceTree = "<group>"; };
+		AF82B7AE1B52708C00F02219 /* modfileprivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modfileprivate.h; sourceTree = "<group>"; };
+		AF82B7AF1B52708C00F02219 /* modproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = modproperties.cpp; sourceTree = "<group>"; };
+		AF82B7B01B52708C00F02219 /* modproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modproperties.h; sourceTree = "<group>"; };
+		AF82B7B11B52708C00F02219 /* modtag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = modtag.cpp; sourceTree = "<group>"; };
+		AF82B7B21B52708C00F02219 /* modtag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modtag.h; sourceTree = "<group>"; };
+		AF82B7B41B52708C00F02219 /* mp4atom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp4atom.cpp; sourceTree = "<group>"; };
+		AF82B7B51B52708C00F02219 /* mp4atom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp4atom.h; sourceTree = "<group>"; };
+		AF82B7B61B52708C00F02219 /* mp4coverart.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp4coverart.cpp; sourceTree = "<group>"; };
+		AF82B7B71B52708C00F02219 /* mp4coverart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp4coverart.h; sourceTree = "<group>"; };
+		AF82B7B81B52708C00F02219 /* mp4file.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp4file.cpp; sourceTree = "<group>"; };
+		AF82B7B91B52708C00F02219 /* mp4file.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp4file.h; sourceTree = "<group>"; };
+		AF82B7BA1B52708C00F02219 /* mp4item.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp4item.cpp; sourceTree = "<group>"; };
+		AF82B7BB1B52708C00F02219 /* mp4item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp4item.h; sourceTree = "<group>"; };
+		AF82B7BC1B52708C00F02219 /* mp4properties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp4properties.cpp; sourceTree = "<group>"; };
+		AF82B7BD1B52708C00F02219 /* mp4properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp4properties.h; sourceTree = "<group>"; };
+		AF82B7BE1B52708C00F02219 /* mp4tag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp4tag.cpp; sourceTree = "<group>"; };
+		AF82B7BF1B52708C00F02219 /* mp4tag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mp4tag.h; sourceTree = "<group>"; };
+		AF82B7C11B52708C00F02219 /* mpcfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mpcfile.cpp; sourceTree = "<group>"; };
+		AF82B7C21B52708C00F02219 /* mpcfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpcfile.h; sourceTree = "<group>"; };
+		AF82B7C31B52708C00F02219 /* mpcproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mpcproperties.cpp; sourceTree = "<group>"; };
+		AF82B7C41B52708C00F02219 /* mpcproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpcproperties.h; sourceTree = "<group>"; };
+		AF82B7C71B52708C00F02219 /* id3v1genres.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v1genres.cpp; sourceTree = "<group>"; };
+		AF82B7C81B52708C00F02219 /* id3v1genres.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v1genres.h; sourceTree = "<group>"; };
+		AF82B7C91B52708C00F02219 /* id3v1tag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v1tag.cpp; sourceTree = "<group>"; };
+		AF82B7CA1B52708C00F02219 /* id3v1tag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v1tag.h; sourceTree = "<group>"; };
+		AF82B7CD1B52708C00F02219 /* attachedpictureframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = attachedpictureframe.cpp; sourceTree = "<group>"; };
+		AF82B7CE1B52708C00F02219 /* attachedpictureframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = attachedpictureframe.h; sourceTree = "<group>"; };
+		AF82B7CF1B52708C00F02219 /* chapterframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = chapterframe.cpp; sourceTree = "<group>"; };
+		AF82B7D01B52708C00F02219 /* chapterframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chapterframe.h; sourceTree = "<group>"; };
+		AF82B7D11B52708C00F02219 /* commentsframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = commentsframe.cpp; sourceTree = "<group>"; };
+		AF82B7D21B52708C00F02219 /* commentsframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commentsframe.h; sourceTree = "<group>"; };
+		AF82B7D31B52708C00F02219 /* eventtimingcodesframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = eventtimingcodesframe.cpp; sourceTree = "<group>"; };
+		AF82B7D41B52708C00F02219 /* eventtimingcodesframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eventtimingcodesframe.h; sourceTree = "<group>"; };
+		AF82B7D51B52708C00F02219 /* generalencapsulatedobjectframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = generalencapsulatedobjectframe.cpp; sourceTree = "<group>"; };
+		AF82B7D61B52708C00F02219 /* generalencapsulatedobjectframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = generalencapsulatedobjectframe.h; sourceTree = "<group>"; };
+		AF82B7D71B52708C00F02219 /* ownershipframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ownershipframe.cpp; sourceTree = "<group>"; };
+		AF82B7D81B52708C00F02219 /* ownershipframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ownershipframe.h; sourceTree = "<group>"; };
+		AF82B7D91B52708C00F02219 /* popularimeterframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = popularimeterframe.cpp; sourceTree = "<group>"; };
+		AF82B7DA1B52708C00F02219 /* popularimeterframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = popularimeterframe.h; sourceTree = "<group>"; };
+		AF82B7DB1B52708C00F02219 /* privateframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = privateframe.cpp; sourceTree = "<group>"; };
+		AF82B7DC1B52708C00F02219 /* privateframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = privateframe.h; sourceTree = "<group>"; };
+		AF82B7DD1B52708C00F02219 /* relativevolumeframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = relativevolumeframe.cpp; sourceTree = "<group>"; };
+		AF82B7DE1B52708C00F02219 /* relativevolumeframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = relativevolumeframe.h; sourceTree = "<group>"; };
+		AF82B7DF1B52708C00F02219 /* synchronizedlyricsframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = synchronizedlyricsframe.cpp; sourceTree = "<group>"; };
+		AF82B7E01B52708C00F02219 /* synchronizedlyricsframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = synchronizedlyricsframe.h; sourceTree = "<group>"; };
+		AF82B7E11B52708C00F02219 /* tableofcontentsframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tableofcontentsframe.cpp; sourceTree = "<group>"; };
+		AF82B7E21B52708C00F02219 /* tableofcontentsframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableofcontentsframe.h; sourceTree = "<group>"; };
+		AF82B7E31B52708C00F02219 /* textidentificationframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = textidentificationframe.cpp; sourceTree = "<group>"; };
+		AF82B7E41B52708C00F02219 /* textidentificationframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = textidentificationframe.h; sourceTree = "<group>"; };
+		AF82B7E51B52708C00F02219 /* uniquefileidentifierframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = uniquefileidentifierframe.cpp; sourceTree = "<group>"; };
+		AF82B7E61B52708C00F02219 /* uniquefileidentifierframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uniquefileidentifierframe.h; sourceTree = "<group>"; };
+		AF82B7E71B52708C00F02219 /* unknownframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unknownframe.cpp; sourceTree = "<group>"; };
+		AF82B7E81B52708C00F02219 /* unknownframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unknownframe.h; sourceTree = "<group>"; };
+		AF82B7E91B52708C00F02219 /* unsynchronizedlyricsframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unsynchronizedlyricsframe.cpp; sourceTree = "<group>"; };
+		AF82B7EA1B52708C00F02219 /* unsynchronizedlyricsframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unsynchronizedlyricsframe.h; sourceTree = "<group>"; };
+		AF82B7EB1B52708C00F02219 /* urllinkframe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = urllinkframe.cpp; sourceTree = "<group>"; };
+		AF82B7EC1B52708C00F02219 /* urllinkframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = urllinkframe.h; sourceTree = "<group>"; };
+		AF82B7ED1B52708C00F02219 /* id3v2.2.0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = id3v2.2.0.txt; sourceTree = "<group>"; };
+		AF82B7EE1B52708C00F02219 /* id3v2.3.0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = id3v2.3.0.txt; sourceTree = "<group>"; };
+		AF82B7EF1B52708C00F02219 /* id3v2.4.0-frames.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "id3v2.4.0-frames.txt"; sourceTree = "<group>"; };
+		AF82B7F01B52708C00F02219 /* id3v2.4.0-structure.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "id3v2.4.0-structure.txt"; sourceTree = "<group>"; };
+		AF82B7F11B52708C00F02219 /* id3v2extendedheader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2extendedheader.cpp; sourceTree = "<group>"; };
+		AF82B7F21B52708C00F02219 /* id3v2extendedheader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2extendedheader.h; sourceTree = "<group>"; };
+		AF82B7F31B52708C00F02219 /* id3v2footer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2footer.cpp; sourceTree = "<group>"; };
+		AF82B7F41B52708C00F02219 /* id3v2footer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2footer.h; sourceTree = "<group>"; };
+		AF82B7F51B52708C00F02219 /* id3v2frame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2frame.cpp; sourceTree = "<group>"; };
+		AF82B7F61B52708C00F02219 /* id3v2frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2frame.h; sourceTree = "<group>"; };
+		AF82B7F71B52708C00F02219 /* id3v2framefactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2framefactory.cpp; sourceTree = "<group>"; };
+		AF82B7F81B52708C00F02219 /* id3v2framefactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2framefactory.h; sourceTree = "<group>"; };
+		AF82B7F91B52708C00F02219 /* id3v2header.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2header.cpp; sourceTree = "<group>"; };
+		AF82B7FA1B52708C00F02219 /* id3v2header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2header.h; sourceTree = "<group>"; };
+		AF82B7FB1B52708C00F02219 /* id3v2synchdata.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2synchdata.cpp; sourceTree = "<group>"; };
+		AF82B7FC1B52708C00F02219 /* id3v2synchdata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2synchdata.h; sourceTree = "<group>"; };
+		AF82B7FD1B52708C00F02219 /* id3v2tag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = id3v2tag.cpp; sourceTree = "<group>"; };
+		AF82B7FE1B52708C00F02219 /* id3v2tag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = id3v2tag.h; sourceTree = "<group>"; };
+		AF82B7FF1B52708C00F02219 /* mpegfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mpegfile.cpp; sourceTree = "<group>"; };
+		AF82B8001B52708C00F02219 /* mpegfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpegfile.h; sourceTree = "<group>"; };
+		AF82B8011B52708C00F02219 /* mpegheader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mpegheader.cpp; sourceTree = "<group>"; };
+		AF82B8021B52708C00F02219 /* mpegheader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpegheader.h; sourceTree = "<group>"; };
+		AF82B8031B52708C00F02219 /* mpegproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mpegproperties.cpp; sourceTree = "<group>"; };
+		AF82B8041B52708C00F02219 /* mpegproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mpegproperties.h; sourceTree = "<group>"; };
+		AF82B8051B52708C00F02219 /* xingheader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xingheader.cpp; sourceTree = "<group>"; };
+		AF82B8061B52708C00F02219 /* xingheader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xingheader.h; sourceTree = "<group>"; };
+		AF82B8091B52708C00F02219 /* oggflacfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oggflacfile.cpp; sourceTree = "<group>"; };
+		AF82B80A1B52708C00F02219 /* oggflacfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oggflacfile.h; sourceTree = "<group>"; };
+		AF82B80B1B52708C00F02219 /* oggfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oggfile.cpp; sourceTree = "<group>"; };
+		AF82B80C1B52708C00F02219 /* oggfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oggfile.h; sourceTree = "<group>"; };
+		AF82B80D1B52708C00F02219 /* oggpage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oggpage.cpp; sourceTree = "<group>"; };
+		AF82B80E1B52708C00F02219 /* oggpage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oggpage.h; sourceTree = "<group>"; };
+		AF82B80F1B52708C00F02219 /* oggpageheader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = oggpageheader.cpp; sourceTree = "<group>"; };
+		AF82B8101B52708C00F02219 /* oggpageheader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oggpageheader.h; sourceTree = "<group>"; };
+		AF82B8121B52708C00F02219 /* opusfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opusfile.cpp; sourceTree = "<group>"; };
+		AF82B8131B52708C00F02219 /* opusfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opusfile.h; sourceTree = "<group>"; };
+		AF82B8141B52708C00F02219 /* opusproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = opusproperties.cpp; sourceTree = "<group>"; };
+		AF82B8151B52708C00F02219 /* opusproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opusproperties.h; sourceTree = "<group>"; };
+		AF82B8171B52708C00F02219 /* speexfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = speexfile.cpp; sourceTree = "<group>"; };
+		AF82B8181B52708C00F02219 /* speexfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = speexfile.h; sourceTree = "<group>"; };
+		AF82B8191B52708C00F02219 /* speexproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = speexproperties.cpp; sourceTree = "<group>"; };
+		AF82B81A1B52708C00F02219 /* speexproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = speexproperties.h; sourceTree = "<group>"; };
+		AF82B81C1B52708C00F02219 /* vorbisfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vorbisfile.cpp; sourceTree = "<group>"; };
+		AF82B81D1B52708C00F02219 /* vorbisfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vorbisfile.h; sourceTree = "<group>"; };
+		AF82B81E1B52708C00F02219 /* vorbisproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = vorbisproperties.cpp; sourceTree = "<group>"; };
+		AF82B81F1B52708C00F02219 /* vorbisproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vorbisproperties.h; sourceTree = "<group>"; };
+		AF82B8201B52708C00F02219 /* xiphcomment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xiphcomment.cpp; sourceTree = "<group>"; };
+		AF82B8211B52708C00F02219 /* xiphcomment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xiphcomment.h; sourceTree = "<group>"; };
+		AF82B8241B52708C00F02219 /* aifffile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = aifffile.cpp; sourceTree = "<group>"; };
+		AF82B8251B52708C00F02219 /* aifffile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aifffile.h; sourceTree = "<group>"; };
+		AF82B8261B52708C00F02219 /* aiffproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = aiffproperties.cpp; sourceTree = "<group>"; };
+		AF82B8271B52708C00F02219 /* aiffproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aiffproperties.h; sourceTree = "<group>"; };
+		AF82B8281B52708C00F02219 /* rifffile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = rifffile.cpp; sourceTree = "<group>"; };
+		AF82B8291B52708C00F02219 /* rifffile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rifffile.h; sourceTree = "<group>"; };
+		AF82B82B1B52708C00F02219 /* infotag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = infotag.cpp; sourceTree = "<group>"; };
+		AF82B82C1B52708C00F02219 /* infotag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = infotag.h; sourceTree = "<group>"; };
+		AF82B82D1B52708C00F02219 /* wavfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wavfile.cpp; sourceTree = "<group>"; };
+		AF82B82E1B52708C00F02219 /* wavfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wavfile.h; sourceTree = "<group>"; };
+		AF82B82F1B52708C00F02219 /* wavproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wavproperties.cpp; sourceTree = "<group>"; };
+		AF82B8301B52708C00F02219 /* wavproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wavproperties.h; sourceTree = "<group>"; };
+		AF82B8321B52708C00F02219 /* s3mfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s3mfile.cpp; sourceTree = "<group>"; };
+		AF82B8331B52708C00F02219 /* s3mfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s3mfile.h; sourceTree = "<group>"; };
+		AF82B8341B52708C00F02219 /* s3mproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = s3mproperties.cpp; sourceTree = "<group>"; };
+		AF82B8351B52708C00F02219 /* s3mproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s3mproperties.h; sourceTree = "<group>"; };
+		AF82B8361B52708C00F02219 /* tag.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tag.cpp; sourceTree = "<group>"; };
+		AF82B8371B52708C00F02219 /* tag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tag.h; sourceTree = "<group>"; };
+		AF82B8381B52708C00F02219 /* taglib_config.h.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = taglib_config.h.cmake; sourceTree = "<group>"; };
+		AF82B8391B52708C00F02219 /* taglib_export.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = taglib_export.h; sourceTree = "<group>"; };
+		AF82B83A1B52708C00F02219 /* tagunion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tagunion.cpp; sourceTree = "<group>"; };
+		AF82B83B1B52708C00F02219 /* tagunion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tagunion.h; sourceTree = "<group>"; };
+		AF82B83D1B52708C00F02219 /* taglib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = taglib.h; sourceTree = "<group>"; };
+		AF82B83E1B52708C00F02219 /* tbytevector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tbytevector.cpp; sourceTree = "<group>"; };
+		AF82B83F1B52708C00F02219 /* tbytevector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tbytevector.h; sourceTree = "<group>"; };
+		AF82B8401B52708C00F02219 /* tbytevectorlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tbytevectorlist.cpp; sourceTree = "<group>"; };
+		AF82B8411B52708C00F02219 /* tbytevectorlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tbytevectorlist.h; sourceTree = "<group>"; };
+		AF82B8421B52708C00F02219 /* tbytevectorstream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tbytevectorstream.cpp; sourceTree = "<group>"; };
+		AF82B8431B52708C00F02219 /* tbytevectorstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tbytevectorstream.h; sourceTree = "<group>"; };
+		AF82B8441B52708C00F02219 /* tdebug.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tdebug.cpp; sourceTree = "<group>"; };
+		AF82B8451B52708C00F02219 /* tdebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tdebug.h; sourceTree = "<group>"; };
+		AF82B8461B52708C00F02219 /* tdebuglistener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tdebuglistener.cpp; sourceTree = "<group>"; };
+		AF82B8471B52708C00F02219 /* tdebuglistener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tdebuglistener.h; sourceTree = "<group>"; };
+		AF82B8481B52708C00F02219 /* tfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tfile.cpp; sourceTree = "<group>"; };
+		AF82B8491B52708C00F02219 /* tfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tfile.h; sourceTree = "<group>"; };
+		AF82B84A1B52708C00F02219 /* tfilestream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tfilestream.cpp; sourceTree = "<group>"; };
+		AF82B84B1B52708C00F02219 /* tfilestream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tfilestream.h; sourceTree = "<group>"; };
+		AF82B84C1B52708C00F02219 /* tiostream.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tiostream.cpp; sourceTree = "<group>"; };
+		AF82B84D1B52708C00F02219 /* tiostream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tiostream.h; sourceTree = "<group>"; };
+		AF82B84E1B52708C00F02219 /* tlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tlist.h; sourceTree = "<group>"; };
+		AF82B84F1B52708C00F02219 /* tlist.tcc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tlist.tcc; sourceTree = "<group>"; };
+		AF82B8501B52708C00F02219 /* tmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmap.h; sourceTree = "<group>"; };
+		AF82B8511B52708C00F02219 /* tmap.tcc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tmap.tcc; sourceTree = "<group>"; };
+		AF82B8521B52708C00F02219 /* tpropertymap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tpropertymap.cpp; sourceTree = "<group>"; };
+		AF82B8531B52708C00F02219 /* tpropertymap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tpropertymap.h; sourceTree = "<group>"; };
+		AF82B8541B52708C00F02219 /* trefcounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trefcounter.cpp; sourceTree = "<group>"; };
+		AF82B8551B52708C00F02219 /* trefcounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trefcounter.h; sourceTree = "<group>"; };
+		AF82B8561B52708C00F02219 /* tstring.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tstring.cpp; sourceTree = "<group>"; };
+		AF82B8571B52708C00F02219 /* tstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tstring.h; sourceTree = "<group>"; };
+		AF82B8581B52708C00F02219 /* tstringlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tstringlist.cpp; sourceTree = "<group>"; };
+		AF82B8591B52708C00F02219 /* tstringlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tstringlist.h; sourceTree = "<group>"; };
+		AF82B85A1B52708C00F02219 /* tutils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tutils.h; sourceTree = "<group>"; };
+		AF82B85B1B52708C00F02219 /* unicode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unicode.cpp; sourceTree = "<group>"; };
+		AF82B85C1B52708C00F02219 /* unicode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unicode.h; sourceTree = "<group>"; };
+		AF82B85E1B52708C00F02219 /* trueaudiofile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trueaudiofile.cpp; sourceTree = "<group>"; };
+		AF82B85F1B52708C00F02219 /* trueaudiofile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trueaudiofile.h; sourceTree = "<group>"; };
+		AF82B8601B52708C00F02219 /* trueaudioproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = trueaudioproperties.cpp; sourceTree = "<group>"; };
+		AF82B8611B52708C00F02219 /* trueaudioproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trueaudioproperties.h; sourceTree = "<group>"; };
+		AF82B8631B52708C00F02219 /* wavpackfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wavpackfile.cpp; sourceTree = "<group>"; };
+		AF82B8641B52708C00F02219 /* wavpackfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wavpackfile.h; sourceTree = "<group>"; };
+		AF82B8651B52708C00F02219 /* wavpackproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wavpackproperties.cpp; sourceTree = "<group>"; };
+		AF82B8661B52708C00F02219 /* wavpackproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wavpackproperties.h; sourceTree = "<group>"; };
+		AF82B8681B52708C00F02219 /* xmfile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xmfile.cpp; sourceTree = "<group>"; };
+		AF82B8691B52708C00F02219 /* xmfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmfile.h; sourceTree = "<group>"; };
+		AF82B86A1B52708C00F02219 /* xmproperties.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = xmproperties.cpp; sourceTree = "<group>"; };
+		AF82B86B1B52708C00F02219 /* xmproperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xmproperties.h; sourceTree = "<group>"; };
+		AF82B86C1B52708C00F02219 /* TagLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TagLib.xcodeproj; sourceTree = "<group>"; };
+		AF82B86F1B52708C00F02219 /* TagLib_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TagLib_Prefix.pch; sourceTree = "<group>"; };
+		AF82B8751B52709F00F02219 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AF82B8761B52709F00F02219 /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		AF82B8771B52709F00F02219 /* CHANGELOG.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.markdown; sourceTree = "<group>"; };
+		AF82B8791B52709F00F02219 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
+		AF82B87A1B52709F00F02219 /* CocoaLibSpotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaLibSpotify.h; sourceTree = "<group>"; };
+		AF82B87B1B52709F00F02219 /* CocoaLibSpotifyPlatformImports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaLibSpotifyPlatformImports.h; sourceTree = "<group>"; };
+		AF82B87C1B52709F00F02219 /* SPAlbum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAlbum.h; sourceTree = "<group>"; };
+		AF82B87D1B52709F00F02219 /* SPAlbum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAlbum.m; sourceTree = "<group>"; };
+		AF82B87E1B52709F00F02219 /* SPAlbumBrowse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAlbumBrowse.h; sourceTree = "<group>"; };
+		AF82B87F1B52709F00F02219 /* SPAlbumBrowse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAlbumBrowse.m; sourceTree = "<group>"; };
+		AF82B8801B52709F00F02219 /* SPArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPArtist.h; sourceTree = "<group>"; };
+		AF82B8811B52709F00F02219 /* SPArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPArtist.m; sourceTree = "<group>"; };
+		AF82B8821B52709F00F02219 /* SPArtistBrowse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPArtistBrowse.h; sourceTree = "<group>"; };
+		AF82B8831B52709F00F02219 /* SPArtistBrowse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPArtistBrowse.m; sourceTree = "<group>"; };
+		AF82B8841B52709F00F02219 /* SPAsyncLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAsyncLoading.h; sourceTree = "<group>"; };
+		AF82B8851B52709F00F02219 /* SPAsyncLoading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAsyncLoading.m; sourceTree = "<group>"; };
+		AF82B8861B52709F00F02219 /* SPCircularBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCircularBuffer.h; sourceTree = "<group>"; };
+		AF82B8871B52709F00F02219 /* SPCircularBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPCircularBuffer.m; sourceTree = "<group>"; };
+		AF82B8881B52709F00F02219 /* SPCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommon.h; sourceTree = "<group>"; };
+		AF82B8891B52709F00F02219 /* SPCoreAudioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCoreAudioController.h; sourceTree = "<group>"; };
+		AF82B88A1B52709F00F02219 /* SPCoreAudioController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPCoreAudioController.m; sourceTree = "<group>"; };
+		AF82B88B1B52709F00F02219 /* SPErrorExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPErrorExtensions.h; sourceTree = "<group>"; };
+		AF82B88C1B52709F00F02219 /* SPErrorExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPErrorExtensions.m; sourceTree = "<group>"; };
+		AF82B88D1B52709F00F02219 /* SPImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPImage.h; sourceTree = "<group>"; };
+		AF82B88E1B52709F00F02219 /* SPImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPImage.m; sourceTree = "<group>"; };
+		AF82B88F1B52709F00F02219 /* SPPlaybackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaybackManager.h; sourceTree = "<group>"; };
+		AF82B8901B52709F00F02219 /* SPPlaybackManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPlaybackManager.m; sourceTree = "<group>"; };
+		AF82B8911B52709F00F02219 /* SPPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylist.h; sourceTree = "<group>"; };
+		AF82B8921B52709F00F02219 /* SPPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPlaylist.m; sourceTree = "<group>"; };
+		AF82B8931B52709F00F02219 /* SPPlaylistContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistContainer.h; sourceTree = "<group>"; };
+		AF82B8941B52709F00F02219 /* SPPlaylistContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPlaylistContainer.m; sourceTree = "<group>"; };
+		AF82B8951B52709F00F02219 /* SPPlaylistContainerInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistContainerInternal.h; sourceTree = "<group>"; };
+		AF82B8961B52709F00F02219 /* SPPlaylistFolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistFolder.h; sourceTree = "<group>"; };
+		AF82B8971B52709F00F02219 /* SPPlaylistFolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPlaylistFolder.m; sourceTree = "<group>"; };
+		AF82B8981B52709F00F02219 /* SPPlaylistFolderInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistFolderInternal.h; sourceTree = "<group>"; };
+		AF82B8991B52709F00F02219 /* SPPlaylistInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistInternal.h; sourceTree = "<group>"; };
+		AF82B89A1B52709F00F02219 /* SPPlaylistItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistItem.h; sourceTree = "<group>"; };
+		AF82B89B1B52709F00F02219 /* SPPlaylistItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPlaylistItem.m; sourceTree = "<group>"; };
+		AF82B89C1B52709F00F02219 /* SPPlaylistItemInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistItemInternal.h; sourceTree = "<group>"; };
+		AF82B89D1B52709F00F02219 /* SPPostTracksToInboxOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPostTracksToInboxOperation.h; sourceTree = "<group>"; };
+		AF82B89E1B52709F00F02219 /* SPPostTracksToInboxOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPostTracksToInboxOperation.m; sourceTree = "<group>"; };
+		AF82B89F1B52709F00F02219 /* SPSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSearch.h; sourceTree = "<group>"; };
+		AF82B8A01B52709F00F02219 /* SPSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSearch.m; sourceTree = "<group>"; };
+		AF82B8A11B52709F00F02219 /* SPSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSession.h; sourceTree = "<group>"; };
+		AF82B8A21B52709F00F02219 /* SPSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSession.m; sourceTree = "<group>"; };
+		AF82B8A31B52709F00F02219 /* SPSessionInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSessionInternal.h; sourceTree = "<group>"; };
+		AF82B8A41B52709F00F02219 /* SPToplist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPToplist.h; sourceTree = "<group>"; };
+		AF82B8A51B52709F00F02219 /* SPToplist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPToplist.m; sourceTree = "<group>"; };
+		AF82B8A61B52709F00F02219 /* SPTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTrack.h; sourceTree = "<group>"; };
+		AF82B8A71B52709F00F02219 /* SPTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTrack.m; sourceTree = "<group>"; };
+		AF82B8A81B52709F00F02219 /* SPTrackInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTrackInternal.h; sourceTree = "<group>"; };
+		AF82B8A91B52709F00F02219 /* SPUnknownPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUnknownPlaylist.h; sourceTree = "<group>"; };
+		AF82B8AA1B52709F00F02219 /* SPUnknownPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPUnknownPlaylist.m; sourceTree = "<group>"; };
+		AF82B8AB1B52709F00F02219 /* SPURLExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPURLExtensions.h; sourceTree = "<group>"; };
+		AF82B8AC1B52709F00F02219 /* SPURLExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPURLExtensions.m; sourceTree = "<group>"; };
+		AF82B8AD1B52709F00F02219 /* SPUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPUser.h; sourceTree = "<group>"; };
+		AF82B8AE1B52709F00F02219 /* SPUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPUser.m; sourceTree = "<group>"; };
+		AF82B8B01B52709F00F02219 /* NSData+Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		AF82B8B11B52709F00F02219 /* NSData+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		AF82B8B21B52709F00F02219 /* SPAudioDeliveryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAudioDeliveryTests.h; sourceTree = "<group>"; };
+		AF82B8B31B52709F00F02219 /* SPAudioDeliveryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAudioDeliveryTests.m; sourceTree = "<group>"; };
+		AF82B8B41B52709F00F02219 /* SPConcurrencyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPConcurrencyTests.h; sourceTree = "<group>"; };
+		AF82B8B51B52709F00F02219 /* SPConcurrencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPConcurrencyTests.m; sourceTree = "<group>"; };
+		AF82B8B61B52709F00F02219 /* SPMetadataTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPMetadataTests.h; sourceTree = "<group>"; };
+		AF82B8B71B52709F00F02219 /* SPMetadataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPMetadataTests.m; sourceTree = "<group>"; };
+		AF82B8B81B52709F00F02219 /* SPPlaylistTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPlaylistTests.h; sourceTree = "<group>"; };
+		AF82B8B91B52709F00F02219 /* SPPlaylistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPlaylistTests.m; sourceTree = "<group>"; };
+		AF82B8BA1B52709F00F02219 /* SPPostTracksToInboxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPPostTracksToInboxTests.h; sourceTree = "<group>"; };
+		AF82B8BB1B52709F00F02219 /* SPPostTracksToInboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPPostTracksToInboxTests.m; sourceTree = "<group>"; };
+		AF82B8BC1B52709F00F02219 /* SPSearchTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSearchTests.h; sourceTree = "<group>"; };
+		AF82B8BD1B52709F00F02219 /* SPSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSearchTests.m; sourceTree = "<group>"; };
+		AF82B8BE1B52709F00F02219 /* SPSessionTeardownTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSessionTeardownTests.h; sourceTree = "<group>"; };
+		AF82B8BF1B52709F00F02219 /* SPSessionTeardownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSessionTeardownTests.m; sourceTree = "<group>"; };
+		AF82B8C01B52709F00F02219 /* SPSessionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSessionTests.h; sourceTree = "<group>"; };
+		AF82B8C11B52709F00F02219 /* SPSessionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSessionTests.m; sourceTree = "<group>"; };
+		AF82B8C21B52709F00F02219 /* SPTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTests.h; sourceTree = "<group>"; };
+		AF82B8C31B52709F00F02219 /* SPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTests.m; sourceTree = "<group>"; };
+		AF82B8C41B52709F00F02219 /* TestConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestConstants.h; sourceTree = "<group>"; };
+		AF82B8C61B52709F00F02219 /* com.spotify.CocoaLibSpotify.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = com.spotify.CocoaLibSpotify.docset; sourceTree = "<group>"; };
+		AF82B8C71B52709F00F02219 /* Docs README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Docs README.txt"; sourceTree = "<group>"; };
+		AF82B8C81B52709F00F02219 /* FAQ.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FAQ.markdown; sourceTree = "<group>"; };
+		AF82B8CA1B52709F00F02219 /* CocoaLibSpotify iOS Library-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaLibSpotify iOS Library-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B8CB1B52709F00F02219 /* CocoaLibSpotify iOS Library.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "CocoaLibSpotify iOS Library.xcodeproj"; sourceTree = "<group>"; };
+		AF82B8CF1B5270A000F02219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF82B8D01B5270A000F02219 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF82B8D11B5270A000F02219 /* CocoaLibSpotify iOS Test Container-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaLibSpotify iOS Test Container-Info.plist"; sourceTree = "<group>"; };
+		AF82B8D21B5270A000F02219 /* CocoaLibSpotify iOS Test Container-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaLibSpotify iOS Test Container-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B8D31B5270A000F02219 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AF82B8D51B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B8D61B5270A000F02219 /* Fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fail.png; sourceTree = "<group>"; };
+		AF82B8D71B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B8D81B5270A000F02219 /* Pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pass.png; sourceTree = "<group>"; };
+		AF82B8D91B5270A000F02219 /* TestProgressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestProgressCell.h; sourceTree = "<group>"; };
+		AF82B8DA1B5270A000F02219 /* TestProgressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProgressCell.m; sourceTree = "<group>"; };
+		AF82B8DB1B5270A000F02219 /* TestsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestsViewController.h; sourceTree = "<group>"; };
+		AF82B8DC1B5270A000F02219 /* TestsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestsViewController.m; sourceTree = "<group>"; };
+		AF82B8E01B5270A000F02219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF82B8E11B5270A000F02219 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF82B8E21B5270A000F02219 /* Empty CocoaLibSpotify Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Empty CocoaLibSpotify Project-Info.plist"; sourceTree = "<group>"; };
+		AF82B8E31B5270A000F02219 /* Empty CocoaLibSpotify Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Empty CocoaLibSpotify Project-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B8E51B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B8E71B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		AF82B8E91B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		AF82B8EA1B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B8EB1B5270A000F02219 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF82B8EC1B5270A000F02219 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF82B8ED1B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Empty CocoaLibSpotify Project.xcodeproj"; sourceTree = "<group>"; };
+		AF82B8F41B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Guess_The_IntroViewController.xib; sourceTree = "<group>"; };
+		AF82B8F61B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B8F81B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		AF82B8F91B5270A000F02219 /* Guess The Intro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Guess The Intro-Info.plist"; sourceTree = "<group>"; };
+		AF82B8FA1B5270A000F02219 /* Guess The Intro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guess The Intro-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B8FB1B5270A000F02219 /* Guess_The_IntroAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Guess_The_IntroAppDelegate.h; sourceTree = "<group>"; };
+		AF82B8FC1B5270A000F02219 /* Guess_The_IntroAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Guess_The_IntroAppDelegate.m; sourceTree = "<group>"; };
+		AF82B8FD1B5270A000F02219 /* Guess_The_IntroViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Guess_The_IntroViewController.h; sourceTree = "<group>"; };
+		AF82B8FE1B5270A000F02219 /* Guess_The_IntroViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Guess_The_IntroViewController.m; sourceTree = "<group>"; };
+		AF82B8FF1B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B9001B5270A000F02219 /* SPArrayExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPArrayExtensions.h; sourceTree = "<group>"; };
+		AF82B9011B5270A000F02219 /* SPArrayExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPArrayExtensions.m; sourceTree = "<group>"; };
+		AF82B9021B5270A000F02219 /* Guess The Intro.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Guess The Intro.xcodeproj"; sourceTree = "<group>"; };
+		AF82B9091B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B90C1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		AF82B90F1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		AF82B9101B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B9111B5270A000F02219 /* RotatableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotatableViewController.h; sourceTree = "<group>"; };
+		AF82B9121B5270A000F02219 /* RotatableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotatableViewController.m; sourceTree = "<group>"; };
+		AF82B9131B5270A000F02219 /* Simple Player-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple Player-Info.plist"; sourceTree = "<group>"; };
+		AF82B9141B5270A000F02219 /* Simple Player-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simple Player-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B9151B5270A000F02219 /* Simple_PlayerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Simple_PlayerAppDelegate.h; sourceTree = "<group>"; };
+		AF82B9161B5270A000F02219 /* Simple_PlayerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Simple_PlayerAppDelegate.m; sourceTree = "<group>"; };
+		AF82B9171B5270A000F02219 /* Simple Player.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Simple Player.xcodeproj"; sourceTree = "<group>"; };
+		AF82B91B1B5270A000F02219 /* SPLoginResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPLoginResources.bundle; sourceTree = "<group>"; };
+		AF82B91D1B5270A000F02219 /* SPClientUpsellViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPClientUpsellViewController.h; sourceTree = "<group>"; };
+		AF82B91E1B5270A000F02219 /* SPClientUpsellViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPClientUpsellViewController.m; sourceTree = "<group>"; };
+		AF82B91F1B5270A000F02219 /* SPFacebookPermissionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFacebookPermissionsViewController.h; sourceTree = "<group>"; };
+		AF82B9201B5270A000F02219 /* SPFacebookPermissionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFacebookPermissionsViewController.m; sourceTree = "<group>"; };
+		AF82B9211B5270A000F02219 /* SPLicenseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLicenseViewController.h; sourceTree = "<group>"; };
+		AF82B9221B5270A000F02219 /* SPLicenseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPLicenseViewController.m; sourceTree = "<group>"; };
+		AF82B9231B5270A000F02219 /* SPLoginLogicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLoginLogicViewController.h; sourceTree = "<group>"; };
+		AF82B9241B5270A000F02219 /* SPLoginLogicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPLoginLogicViewController.m; sourceTree = "<group>"; };
+		AF82B9251B5270A000F02219 /* SPLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLoginViewController.h; sourceTree = "<group>"; };
+		AF82B9261B5270A000F02219 /* SPLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPLoginViewController.m; sourceTree = "<group>"; };
+		AF82B9271B5270A000F02219 /* SPLoginViewControllerInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPLoginViewControllerInternal.h; sourceTree = "<group>"; };
+		AF82B9281B5270A000F02219 /* SPSignupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSignupViewController.h; sourceTree = "<group>"; };
+		AF82B9291B5270A000F02219 /* SPSignupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSignupViewController.m; sourceTree = "<group>"; };
+		AF82B92A1B5270A000F02219 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		AF82B92C1B5270A000F02219 /* CocoaLibSpotify Mac Framework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "CocoaLibSpotify Mac Framework.xcodeproj"; sourceTree = "<group>"; };
+		AF82B9301B5270A000F02219 /* CocoaLibSpotify Test Container-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaLibSpotify Test Container-Info.plist"; sourceTree = "<group>"; };
+		AF82B9311B5270A000F02219 /* CocoaLibSpotify Test Container-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaLibSpotify Test Container-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B9331B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF82B9351B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B9361B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B9371B5270A000F02219 /* RunTests.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunTests.sh; sourceTree = "<group>"; };
+		AF82B9381B5270A000F02219 /* TestRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunner.h; sourceTree = "<group>"; };
+		AF82B9391B5270A000F02219 /* TestRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRunner.m; sourceTree = "<group>"; };
+		AF82B93A1B5270A000F02219 /* CocoaLibSpotify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaLibSpotify-Info.plist"; sourceTree = "<group>"; };
+		AF82B93B1B5270A000F02219 /* CocoaLibSpotify-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaLibSpotify-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B93D1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B93F1B5270A000F02219 /* ChangeLog */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		AF82B9421B5270A000F02219 /* annotated.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = annotated.html; sourceTree = "<group>"; };
+		AF82B9431B5270A000F02219 /* api_8h.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = api_8h.html; sourceTree = "<group>"; };
+		AF82B9441B5270A000F02219 /* bc_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bc_s.png; sourceTree = "<group>"; };
+		AF82B9451B5270A000F02219 /* bdwn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bdwn.png; sourceTree = "<group>"; };
+		AF82B9461B5270A000F02219 /* browse_8c-example.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "browse_8c-example.html"; sourceTree = "<group>"; };
+		AF82B9471B5270A000F02219 /* classes.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = classes.html; sourceTree = "<group>"; };
+		AF82B9481B5270A000F02219 /* closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed.png; sourceTree = "<group>"; };
+		AF82B9491B5270A000F02219 /* doxygen.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = doxygen.css; sourceTree = "<group>"; };
+		AF82B94A1B5270A000F02219 /* doxygen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doxygen.png; sourceTree = "<group>"; };
+		AF82B94B1B5270A000F02219 /* examples.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = examples.html; sourceTree = "<group>"; };
+		AF82B94C1B5270A000F02219 /* files.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = files.html; sourceTree = "<group>"; };
+		AF82B94D1B5270A000F02219 /* functions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = functions.html; sourceTree = "<group>"; };
+		AF82B94E1B5270A000F02219 /* functions_vars.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = functions_vars.html; sourceTree = "<group>"; };
+		AF82B94F1B5270A000F02219 /* globals.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals.html; sourceTree = "<group>"; };
+		AF82B9501B5270A000F02219 /* globals_0x69.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_0x69.html; sourceTree = "<group>"; };
+		AF82B9511B5270A000F02219 /* globals_0x73.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_0x73.html; sourceTree = "<group>"; };
+		AF82B9521B5270A000F02219 /* globals_0x74.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_0x74.html; sourceTree = "<group>"; };
+		AF82B9531B5270A000F02219 /* globals_defs.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_defs.html; sourceTree = "<group>"; };
+		AF82B9541B5270A000F02219 /* globals_enum.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_enum.html; sourceTree = "<group>"; };
+		AF82B9551B5270A000F02219 /* globals_eval.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_eval.html; sourceTree = "<group>"; };
+		AF82B9561B5270A000F02219 /* globals_func.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_func.html; sourceTree = "<group>"; };
+		AF82B9571B5270A000F02219 /* globals_type.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = globals_type.html; sourceTree = "<group>"; };
+		AF82B9581B5270A000F02219 /* group__album.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__album.html; sourceTree = "<group>"; };
+		AF82B9591B5270A000F02219 /* group__albumbrowse.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__albumbrowse.html; sourceTree = "<group>"; };
+		AF82B95A1B5270A000F02219 /* group__artist.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__artist.html; sourceTree = "<group>"; };
+		AF82B95B1B5270A000F02219 /* group__artistbrowse.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__artistbrowse.html; sourceTree = "<group>"; };
+		AF82B95C1B5270A000F02219 /* group__error.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__error.html; sourceTree = "<group>"; };
+		AF82B95D1B5270A000F02219 /* group__image.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__image.html; sourceTree = "<group>"; };
+		AF82B95E1B5270A000F02219 /* group__inbox.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__inbox.html; sourceTree = "<group>"; };
+		AF82B95F1B5270A000F02219 /* group__link.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__link.html; sourceTree = "<group>"; };
+		AF82B9601B5270A000F02219 /* group__playlist.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__playlist.html; sourceTree = "<group>"; };
+		AF82B9611B5270A000F02219 /* group__search.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__search.html; sourceTree = "<group>"; };
+		AF82B9621B5270A000F02219 /* group__session.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__session.html; sourceTree = "<group>"; };
+		AF82B9631B5270A000F02219 /* group__toplist.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__toplist.html; sourceTree = "<group>"; };
+		AF82B9641B5270A000F02219 /* group__track.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__track.html; sourceTree = "<group>"; };
+		AF82B9651B5270A000F02219 /* group__types.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__types.html; sourceTree = "<group>"; };
+		AF82B9661B5270A000F02219 /* group__user.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = group__user.html; sourceTree = "<group>"; };
+		AF82B9671B5270A000F02219 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		AF82B9681B5270A000F02219 /* jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		AF82B9691B5270A000F02219 /* jukebox_8c-example.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "jukebox_8c-example.html"; sourceTree = "<group>"; };
+		AF82B96A1B5270A000F02219 /* modules.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = modules.html; sourceTree = "<group>"; };
+		AF82B96B1B5270A000F02219 /* nav_f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_f.png; sourceTree = "<group>"; };
+		AF82B96C1B5270A000F02219 /* nav_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_h.png; sourceTree = "<group>"; };
+		AF82B96D1B5270A000F02219 /* open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		AF82B96E1B5270A000F02219 /* search_8c-example.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "search_8c-example.html"; sourceTree = "<group>"; };
+		AF82B96F1B5270A000F02219 /* structsp__audio__buffer__stats.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__audio__buffer__stats.html; sourceTree = "<group>"; };
+		AF82B9701B5270A000F02219 /* structsp__audioformat.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__audioformat.html; sourceTree = "<group>"; };
+		AF82B9711B5270A000F02219 /* structsp__offline__sync__status.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__offline__sync__status.html; sourceTree = "<group>"; };
+		AF82B9721B5270A000F02219 /* structsp__playlist__callbacks.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__playlist__callbacks.html; sourceTree = "<group>"; };
+		AF82B9731B5270A000F02219 /* structsp__playlistcontainer__callbacks.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__playlistcontainer__callbacks.html; sourceTree = "<group>"; };
+		AF82B9741B5270A000F02219 /* structsp__session__callbacks.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__session__callbacks.html; sourceTree = "<group>"; };
+		AF82B9751B5270A000F02219 /* structsp__session__config.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__session__config.html; sourceTree = "<group>"; };
+		AF82B9761B5270A000F02219 /* structsp__subscribers.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = structsp__subscribers.html; sourceTree = "<group>"; };
+		AF82B9771B5270A000F02219 /* tab_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_a.png; sourceTree = "<group>"; };
+		AF82B9781B5270A000F02219 /* tab_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_b.png; sourceTree = "<group>"; };
+		AF82B9791B5270A000F02219 /* tab_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_h.png; sourceTree = "<group>"; };
+		AF82B97A1B5270A000F02219 /* tab_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tab_s.png; sourceTree = "<group>"; };
+		AF82B97B1B5270A000F02219 /* tabs.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = tabs.css; sourceTree = "<group>"; };
+		AF82B97C1B5270A000F02219 /* toplist_8c-example.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = "toplist_8c-example.html"; sourceTree = "<group>"; };
+		AF82B97E1B5270A000F02219 /* spotify-core-logo-128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotify-core-logo-128x128.png"; sourceTree = "<group>"; };
+		AF82B97F1B5270A000F02219 /* spotify-core.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "spotify-core.txt"; sourceTree = "<group>"; };
+		AF82B9811B5270A000F02219 /* appkey.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = appkey.c; sourceTree = "<group>"; };
+		AF82B9821B5270A000F02219 /* common.mk */ = {isa = PBXFileReference; lastKnownFileType = text; path = common.mk; sourceTree = "<group>"; };
+		AF82B9841B5270A000F02219 /* alsa-audio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "alsa-audio.c"; sourceTree = "<group>"; };
+		AF82B9851B5270A000F02219 /* audio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = audio.c; sourceTree = "<group>"; };
+		AF82B9861B5270A000F02219 /* audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = audio.h; sourceTree = "<group>"; };
+		AF82B9871B5270A000F02219 /* dummy-audio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "dummy-audio.c"; sourceTree = "<group>"; };
+		AF82B9881B5270A000F02219 /* jukebox.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jukebox.c; sourceTree = "<group>"; };
+		AF82B9891B5270A000F02219 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AF82B98A1B5270A000F02219 /* openal-audio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "openal-audio.c"; sourceTree = "<group>"; };
+		AF82B98C1B5270A000F02219 /* jukebox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = jukebox.xcodeproj; sourceTree = "<group>"; };
+		AF82B98F1B5270A000F02219 /* osx-audio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "osx-audio.c"; sourceTree = "<group>"; };
+		AF82B9901B5270A000F02219 /* playtrack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = playtrack.c; sourceTree = "<group>"; };
+		AF82B9911B5270A000F02219 /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
+		AF82B9931B5270A000F02219 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AF82B9941B5270A000F02219 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		AF82B9951B5270A000F02219 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AF82B9961B5270A000F02219 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AF82B9991B5270A000F02219 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B99B1B5270A000F02219 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF82B99C1B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B99D1B5270A000F02219 /* Randomify-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Randomify-Info.plist"; sourceTree = "<group>"; };
+		AF82B99E1B5270A000F02219 /* Randomify.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Randomify.xcodeproj; sourceTree = "<group>"; };
+		AF82B9A11B5270A000F02219 /* Randomify_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Randomify_Prefix.pch; sourceTree = "<group>"; };
+		AF82B9A21B5270A000F02219 /* RandomifyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomifyAppDelegate.h; sourceTree = "<group>"; };
+		AF82B9A31B5270A000F02219 /* RandomifyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomifyAppDelegate.m; sourceTree = "<group>"; };
+		AF82B9A41B5270A000F02219 /* SpotifyPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotifyPlaylist.h; sourceTree = "<group>"; };
+		AF82B9A51B5270A000F02219 /* SpotifyPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotifyPlaylist.m; sourceTree = "<group>"; };
+		AF82B9A61B5270A000F02219 /* SpotifySession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotifySession.h; sourceTree = "<group>"; };
+		AF82B9A71B5270A000F02219 /* SpotifySession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotifySession.m; sourceTree = "<group>"; };
+		AF82B9A81B5270A000F02219 /* SpotifyTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotifyTrack.h; sourceTree = "<group>"; };
+		AF82B9A91B5270A000F02219 /* SpotifyTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotifyTrack.m; sourceTree = "<group>"; };
+		AF82B9AB1B5270A000F02219 /* browse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = browse.c; sourceTree = "<group>"; };
+		AF82B9AC1B5270A000F02219 /* cmd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmd.c; sourceTree = "<group>"; };
+		AF82B9AD1B5270A000F02219 /* cmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
+		AF82B9AE1B5270A000F02219 /* inbox.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inbox.c; sourceTree = "<group>"; };
+		AF82B9AF1B5270A000F02219 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AF82B9B11B5270A000F02219 /* spshell.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = spshell.xcodeproj; sourceTree = "<group>"; };
+		AF82B9B41B5270A000F02219 /* playlist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = playlist.c; sourceTree = "<group>"; };
+		AF82B9B51B5270A000F02219 /* scrobbling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scrobbling.c; sourceTree = "<group>"; };
+		AF82B9B61B5270A000F02219 /* search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = search.c; sourceTree = "<group>"; };
+		AF82B9B71B5270A000F02219 /* spshell.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spshell.c; sourceTree = "<group>"; };
+		AF82B9B81B5270A000F02219 /* spshell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = spshell.h; sourceTree = "<group>"; };
+		AF82B9B91B5270A000F02219 /* spshell_posix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spshell_posix.c; sourceTree = "<group>"; };
+		AF82B9BA1B5270A000F02219 /* spshell_win32.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = spshell_win32.c; sourceTree = "<group>"; };
+		AF82B9BB1B5270A000F02219 /* star.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = star.c; sourceTree = "<group>"; };
+		AF82B9BC1B5270A000F02219 /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		AF82B9BD1B5270A000F02219 /* toplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = toplist.c; sourceTree = "<group>"; };
+		AF82B9BF1B5270A000F02219 /* spshell.vcproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = spshell.vcproj; sourceTree = "<group>"; };
+		AF82B9C01B5270A000F02219 /* spshell.vcxproj */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = spshell.vcxproj; sourceTree = "<group>"; };
+		AF82B9C11B5270A000F02219 /* spshell.vcxproj.filters */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = spshell.vcxproj.filters; sourceTree = "<group>"; };
+		AF82B9C31B5270A000F02219 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		AF82B9C41B5270A000F02219 /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		AF82B9C51B5270A000F02219 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		AF82B9C61B5270A000F02219 /* libspotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libspotify.framework; sourceTree = "<group>"; };
+		AF82B9C71B5270A000F02219 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		AF82B9C81B5270A000F02219 /* licenses.xhtml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = licenses.xhtml; sourceTree = "<group>"; };
+		AF82B9CA1B5270A000F02219 /* album.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = album.3spotify; sourceTree = "<group>"; };
+		AF82B9CB1B5270A000F02219 /* albumbrowse.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = albumbrowse.3spotify; sourceTree = "<group>"; };
+		AF82B9CC1B5270A000F02219 /* api.h.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = api.h.3spotify; sourceTree = "<group>"; };
+		AF82B9CD1B5270A000F02219 /* artist.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = artist.3spotify; sourceTree = "<group>"; };
+		AF82B9CE1B5270A000F02219 /* artistbrowse.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = artistbrowse.3spotify; sourceTree = "<group>"; };
+		AF82B9CF1B5270A000F02219 /* error.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = error.3spotify; sourceTree = "<group>"; };
+		AF82B9D01B5270A000F02219 /* image.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = image.3spotify; sourceTree = "<group>"; };
+		AF82B9D11B5270A000F02219 /* inbox.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = inbox.3spotify; sourceTree = "<group>"; };
+		AF82B9D21B5270A000F02219 /* link.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = link.3spotify; sourceTree = "<group>"; };
+		AF82B9D31B5270A000F02219 /* playlist.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = playlist.3spotify; sourceTree = "<group>"; };
+		AF82B9D41B5270A000F02219 /* search.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = search.3spotify; sourceTree = "<group>"; };
+		AF82B9D51B5270A000F02219 /* session.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = session.3spotify; sourceTree = "<group>"; };
+		AF82B9D61B5270A000F02219 /* sp_audio_buffer_stats.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_audio_buffer_stats.3spotify; sourceTree = "<group>"; };
+		AF82B9D71B5270A000F02219 /* sp_audioformat.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_audioformat.3spotify; sourceTree = "<group>"; };
+		AF82B9D81B5270A000F02219 /* sp_offline_sync_status.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_offline_sync_status.3spotify; sourceTree = "<group>"; };
+		AF82B9D91B5270A000F02219 /* sp_playlist_callbacks.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_playlist_callbacks.3spotify; sourceTree = "<group>"; };
+		AF82B9DA1B5270A000F02219 /* sp_playlistcontainer_callbacks.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_playlistcontainer_callbacks.3spotify; sourceTree = "<group>"; };
+		AF82B9DB1B5270A000F02219 /* sp_session_callbacks.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_session_callbacks.3spotify; sourceTree = "<group>"; };
+		AF82B9DC1B5270A000F02219 /* sp_session_config.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_session_config.3spotify; sourceTree = "<group>"; };
+		AF82B9DD1B5270A000F02219 /* sp_subscribers.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = sp_subscribers.3spotify; sourceTree = "<group>"; };
+		AF82B9DE1B5270A000F02219 /* toplist.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = toplist.3spotify; sourceTree = "<group>"; };
+		AF82B9DF1B5270A000F02219 /* track.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = track.3spotify; sourceTree = "<group>"; };
+		AF82B9E01B5270A000F02219 /* types.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = types.3spotify; sourceTree = "<group>"; };
+		AF82B9E11B5270A000F02219 /* user.3spotify */ = {isa = PBXFileReference; lastKnownFileType = text; path = user.3spotify; sourceTree = "<group>"; };
+		AF82B9E21B5270A000F02219 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AF82B9E61B5270A000F02219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF82B9E71B5270A000F02219 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF82B9E81B5270A000F02219 /* Empty CocoaLibSpotify Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Empty CocoaLibSpotify Project-Info.plist"; sourceTree = "<group>"; };
+		AF82B9E91B5270A000F02219 /* Empty CocoaLibSpotify Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Empty CocoaLibSpotify Project-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B9EB1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF82B9ED1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B9EF1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF82B9F01B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82B9F11B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Empty CocoaLibSpotify Project.xcodeproj"; sourceTree = "<group>"; };
+		AF82B9F81B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF82B9FA1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82B9FC1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF82B9FD1B5270A000F02219 /* Guess The Intro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Guess The Intro-Info.plist"; sourceTree = "<group>"; };
+		AF82B9FE1B5270A000F02219 /* Guess The Intro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guess The Intro-Prefix.pch"; sourceTree = "<group>"; };
+		AF82B9FF1B5270A000F02219 /* Guess_The_IntroAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Guess_The_IntroAppDelegate.h; sourceTree = "<group>"; };
+		AF82BA001B5270A000F02219 /* Guess_The_IntroAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Guess_The_IntroAppDelegate.m; sourceTree = "<group>"; };
+		AF82BA011B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82BA021B5270A000F02219 /* SPArrayExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPArrayExtensions.h; sourceTree = "<group>"; };
+		AF82BA031B5270A000F02219 /* SPArrayExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPArrayExtensions.m; sourceTree = "<group>"; };
+		AF82BA041B5270A000F02219 /* Guess The Intro.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Guess The Intro.xcodeproj"; sourceTree = "<group>"; };
+		AF82BA0A1B5270A000F02219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF82BA0B1B5270A000F02219 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF82BA0D1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF82BA0F1B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82BA111B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF82BA121B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82BA131B5270A000F02219 /* Offline Playlists-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Offline Playlists-Info.plist"; sourceTree = "<group>"; };
+		AF82BA141B5270A000F02219 /* Offline Playlists-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Offline Playlists-Prefix.pch"; sourceTree = "<group>"; };
+		AF82BA151B5270A000F02219 /* SPPlaylist+SPPlaylistOfflineExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPPlaylist+SPPlaylistOfflineExtensions.h"; sourceTree = "<group>"; };
+		AF82BA161B5270A000F02219 /* SPPlaylist+SPPlaylistOfflineExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SPPlaylist+SPPlaylistOfflineExtensions.m"; sourceTree = "<group>"; };
+		AF82BA171B5270A000F02219 /* SPPlaylistItem+SPPlaylistItemOfflineExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPPlaylistItem+SPPlaylistItemOfflineExtensions.h"; sourceTree = "<group>"; };
+		AF82BA181B5270A000F02219 /* SPPlaylistItem+SPPlaylistItemOfflineExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SPPlaylistItem+SPPlaylistItemOfflineExtensions.m"; sourceTree = "<group>"; };
+		AF82BA191B5270A000F02219 /* Offline Playlists.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Offline Playlists.xcodeproj"; sourceTree = "<group>"; };
+		AF82BA201B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF82BA221B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF82BA241B5270A000F02219 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF82BA251B5270A000F02219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF82BA261B5270A000F02219 /* SimplePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimplePlayer-Info.plist"; sourceTree = "<group>"; };
+		AF82BA271B5270A000F02219 /* SimplePlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimplePlayer-Prefix.pch"; sourceTree = "<group>"; };
+		AF82BA281B5270A000F02219 /* SimplePlayerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimplePlayerAppDelegate.h; sourceTree = "<group>"; };
+		AF82BA291B5270A000F02219 /* SimplePlayerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePlayerAppDelegate.m; sourceTree = "<group>"; };
+		AF82BA2A1B5270A000F02219 /* SimplePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = SimplePlayer.xcodeproj; sourceTree = "<group>"; };
+		AF82BA2E1B5270A000F02219 /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		AF82BA2F1B5270A000F02219 /* Sample Projects README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sample Projects README.txt"; sourceTree = "<group>"; };
+		AF82BA311B5270A000F02219 /* generate-docset.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-docset.sh"; sourceTree = "<group>"; };
+		AF82BA321B5270A000F02219 /* update-libspotify-version.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "update-libspotify-version.py"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +741,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				945532DC1B4ED07400FDDACD /* TagLib.framework in Frameworks */,
-				945533051B4ED3A500FDDACD /* CocoaLibSpotify.framework in Frameworks */,
+				AF82BA5D1B5270A600F02219 /* CocoaLibSpotify.framework in Frameworks */,
+				AF82B8731B52709400F02219 /* TagLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +752,6 @@
 		500D51ED1461569A0009B5FB = {
 			isa = PBXGroup;
 			children = (
-				945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */,
-				945532AF1B4ECC7200FDDACD /* TagLib.xcodeproj */,
 				945532C51B4ECE6600FDDACD /* Applefy */,
 				500D51FB1461569A0009B5FB /* Frameworks */,
 				500D51F91461569A0009B5FB /* Products */,
@@ -137,6 +769,8 @@
 		500D51FB1461569A0009B5FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF82B8741B52709F00F02219 /* CocoaLibSpotify */,
+				AF82B76B1B52708C00F02219 /* TagLib */,
 				500D5242146187D80009B5FB /* AudioUnit.framework */,
 				500D5243146187D80009B5FB /* CoreAudio.framework */,
 				500D51FC1461569A0009B5FB /* Cocoa.framework */,
@@ -156,22 +790,12 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		945532B01B4ECC7200FDDACD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				945532B51B4ECC7300FDDACD /* TagLib.framework */,
-				945532B71B4ECC7300FDDACD /* TagLib.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		945532C51B4ECE6600FDDACD /* Applefy */ = {
 			isa = PBXGroup;
 			children = (
+				AF82B29B1B5268FB00F02219 /* appkey.c */,
 				945532C61B4ECE6600FDDACD /* AppDelegate.h */,
 				945532DA1B4ED04F00FDDACD /* AppDelegate.mm */,
-				94705EE41B5007350054F4CD /* NSString+TStringAdditions.h */,
-				94705EE51B5007350054F4CD /* NSString+TStringAdditions.mm */,
 				945532DE1B4ED0CB00FDDACD /* taglib_config.h */,
 				945533091B4ED5D400FDDACD /* MainMenu.xib */,
 				945532CF1B4ECE6600FDDACD /* Assets.xcassets */,
@@ -190,13 +814,1240 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		945532FD1B4ED39600FDDACD /* Products */ = {
+		AF82B76B1B52708C00F02219 /* TagLib */ = {
 			isa = PBXGroup;
 			children = (
-				945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */,
-				945533041B4ED39600FDDACD /* CocoaLSTests.app */,
+				AF82B76C1B52708C00F02219 /* Cocoa */,
+				AF82B7751B52708C00F02219 /* config.h */,
+				AF82B7761B52708C00F02219 /* COPYING.LGPL */,
+				AF82B7771B52708C00F02219 /* COPYING.MPL */,
+				AF82B7781B52708C00F02219 /* InfoPlist.strings */,
+				AF82B77A1B52708C00F02219 /* Info.plist */,
+				AF82B77B1B52708C00F02219 /* README */,
+				AF82B77C1B52708C00F02219 /* taglib */,
+				AF82B86C1B52708C00F02219 /* TagLib.xcodeproj */,
+				AF82B86F1B52708C00F02219 /* TagLib_Prefix.pch */,
+			);
+			name = TagLib;
+			path = Applefy/TagLib;
+			sourceTree = "<group>";
+		};
+		AF82B76C1B52708C00F02219 /* Cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B76D1B52708C00F02219 /* NSString+TStringAdditions.h */,
+				AF82B76E1B52708C00F02219 /* NSString+TStringAdditions.mm */,
+				AF82B76F1B52708C00F02219 /* TLID3MetaData.h */,
+				AF82B7701B52708C00F02219 /* TLID3MetaData.mm */,
+				AF82B7711B52708C00F02219 /* TLMetaData.h */,
+				AF82B7721B52708C00F02219 /* TLMetaData.m */,
+				AF82B7731B52708C00F02219 /* TLMP4MetaData.h */,
+				AF82B7741B52708C00F02219 /* TLMP4MetaData.mm */,
+			);
+			path = Cocoa;
+			sourceTree = "<group>";
+		};
+		AF82B77C1B52708C00F02219 /* taglib */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B77D1B52708C00F02219 /* ape */,
+				AF82B7891B52708C00F02219 /* asf */,
+				AF82B7941B52708C00F02219 /* audioproperties.cpp */,
+				AF82B7951B52708C00F02219 /* audioproperties.h */,
+				AF82B7961B52708C00F02219 /* CMakeLists.txt */,
+				AF82B7971B52708C00F02219 /* fileref.cpp */,
+				AF82B7981B52708C00F02219 /* fileref.h */,
+				AF82B7991B52708C00F02219 /* flac */,
+				AF82B7A41B52708C00F02219 /* it */,
+				AF82B7A91B52708C00F02219 /* mod */,
+				AF82B7B31B52708C00F02219 /* mp4 */,
+				AF82B7C01B52708C00F02219 /* mpc */,
+				AF82B7C51B52708C00F02219 /* mpeg */,
+				AF82B8071B52708C00F02219 /* ogg */,
+				AF82B8221B52708C00F02219 /* riff */,
+				AF82B8311B52708C00F02219 /* s3m */,
+				AF82B8361B52708C00F02219 /* tag.cpp */,
+				AF82B8371B52708C00F02219 /* tag.h */,
+				AF82B8381B52708C00F02219 /* taglib_config.h.cmake */,
+				AF82B8391B52708C00F02219 /* taglib_export.h */,
+				AF82B83A1B52708C00F02219 /* tagunion.cpp */,
+				AF82B83B1B52708C00F02219 /* tagunion.h */,
+				AF82B83C1B52708C00F02219 /* toolkit */,
+				AF82B85D1B52708C00F02219 /* trueaudio */,
+				AF82B8621B52708C00F02219 /* wavpack */,
+				AF82B8671B52708C00F02219 /* xm */,
+			);
+			path = taglib;
+			sourceTree = "<group>";
+		};
+		AF82B77D1B52708C00F02219 /* ape */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B77E1B52708C00F02219 /* ape-tag-format.txt */,
+				AF82B77F1B52708C00F02219 /* apefile.cpp */,
+				AF82B7801B52708C00F02219 /* apefile.h */,
+				AF82B7811B52708C00F02219 /* apefooter.cpp */,
+				AF82B7821B52708C00F02219 /* apefooter.h */,
+				AF82B7831B52708C00F02219 /* apeitem.cpp */,
+				AF82B7841B52708C00F02219 /* apeitem.h */,
+				AF82B7851B52708C00F02219 /* apeproperties.cpp */,
+				AF82B7861B52708C00F02219 /* apeproperties.h */,
+				AF82B7871B52708C00F02219 /* apetag.cpp */,
+				AF82B7881B52708C00F02219 /* apetag.h */,
+			);
+			path = ape;
+			sourceTree = "<group>";
+		};
+		AF82B7891B52708C00F02219 /* asf */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B78A1B52708C00F02219 /* asfattribute.cpp */,
+				AF82B78B1B52708C00F02219 /* asfattribute.h */,
+				AF82B78C1B52708C00F02219 /* asffile.cpp */,
+				AF82B78D1B52708C00F02219 /* asffile.h */,
+				AF82B78E1B52708C00F02219 /* asfpicture.cpp */,
+				AF82B78F1B52708C00F02219 /* asfpicture.h */,
+				AF82B7901B52708C00F02219 /* asfproperties.cpp */,
+				AF82B7911B52708C00F02219 /* asfproperties.h */,
+				AF82B7921B52708C00F02219 /* asftag.cpp */,
+				AF82B7931B52708C00F02219 /* asftag.h */,
+			);
+			path = asf;
+			sourceTree = "<group>";
+		};
+		AF82B7991B52708C00F02219 /* flac */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B79A1B52708C00F02219 /* flacfile.cpp */,
+				AF82B79B1B52708C00F02219 /* flacfile.h */,
+				AF82B79C1B52708C00F02219 /* flacmetadatablock.cpp */,
+				AF82B79D1B52708C00F02219 /* flacmetadatablock.h */,
+				AF82B79E1B52708C00F02219 /* flacpicture.cpp */,
+				AF82B79F1B52708C00F02219 /* flacpicture.h */,
+				AF82B7A01B52708C00F02219 /* flacproperties.cpp */,
+				AF82B7A11B52708C00F02219 /* flacproperties.h */,
+				AF82B7A21B52708C00F02219 /* flacunknownmetadatablock.cpp */,
+				AF82B7A31B52708C00F02219 /* flacunknownmetadatablock.h */,
+			);
+			path = flac;
+			sourceTree = "<group>";
+		};
+		AF82B7A41B52708C00F02219 /* it */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7A51B52708C00F02219 /* itfile.cpp */,
+				AF82B7A61B52708C00F02219 /* itfile.h */,
+				AF82B7A71B52708C00F02219 /* itproperties.cpp */,
+				AF82B7A81B52708C00F02219 /* itproperties.h */,
+			);
+			path = it;
+			sourceTree = "<group>";
+		};
+		AF82B7A91B52708C00F02219 /* mod */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7AA1B52708C00F02219 /* modfile.cpp */,
+				AF82B7AB1B52708C00F02219 /* modfile.h */,
+				AF82B7AC1B52708C00F02219 /* modfilebase.cpp */,
+				AF82B7AD1B52708C00F02219 /* modfilebase.h */,
+				AF82B7AE1B52708C00F02219 /* modfileprivate.h */,
+				AF82B7AF1B52708C00F02219 /* modproperties.cpp */,
+				AF82B7B01B52708C00F02219 /* modproperties.h */,
+				AF82B7B11B52708C00F02219 /* modtag.cpp */,
+				AF82B7B21B52708C00F02219 /* modtag.h */,
+			);
+			path = mod;
+			sourceTree = "<group>";
+		};
+		AF82B7B31B52708C00F02219 /* mp4 */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7B41B52708C00F02219 /* mp4atom.cpp */,
+				AF82B7B51B52708C00F02219 /* mp4atom.h */,
+				AF82B7B61B52708C00F02219 /* mp4coverart.cpp */,
+				AF82B7B71B52708C00F02219 /* mp4coverart.h */,
+				AF82B7B81B52708C00F02219 /* mp4file.cpp */,
+				AF82B7B91B52708C00F02219 /* mp4file.h */,
+				AF82B7BA1B52708C00F02219 /* mp4item.cpp */,
+				AF82B7BB1B52708C00F02219 /* mp4item.h */,
+				AF82B7BC1B52708C00F02219 /* mp4properties.cpp */,
+				AF82B7BD1B52708C00F02219 /* mp4properties.h */,
+				AF82B7BE1B52708C00F02219 /* mp4tag.cpp */,
+				AF82B7BF1B52708C00F02219 /* mp4tag.h */,
+			);
+			path = mp4;
+			sourceTree = "<group>";
+		};
+		AF82B7C01B52708C00F02219 /* mpc */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7C11B52708C00F02219 /* mpcfile.cpp */,
+				AF82B7C21B52708C00F02219 /* mpcfile.h */,
+				AF82B7C31B52708C00F02219 /* mpcproperties.cpp */,
+				AF82B7C41B52708C00F02219 /* mpcproperties.h */,
+			);
+			path = mpc;
+			sourceTree = "<group>";
+		};
+		AF82B7C51B52708C00F02219 /* mpeg */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7C61B52708C00F02219 /* id3v1 */,
+				AF82B7CB1B52708C00F02219 /* id3v2 */,
+				AF82B7FF1B52708C00F02219 /* mpegfile.cpp */,
+				AF82B8001B52708C00F02219 /* mpegfile.h */,
+				AF82B8011B52708C00F02219 /* mpegheader.cpp */,
+				AF82B8021B52708C00F02219 /* mpegheader.h */,
+				AF82B8031B52708C00F02219 /* mpegproperties.cpp */,
+				AF82B8041B52708C00F02219 /* mpegproperties.h */,
+				AF82B8051B52708C00F02219 /* xingheader.cpp */,
+				AF82B8061B52708C00F02219 /* xingheader.h */,
+			);
+			path = mpeg;
+			sourceTree = "<group>";
+		};
+		AF82B7C61B52708C00F02219 /* id3v1 */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7C71B52708C00F02219 /* id3v1genres.cpp */,
+				AF82B7C81B52708C00F02219 /* id3v1genres.h */,
+				AF82B7C91B52708C00F02219 /* id3v1tag.cpp */,
+				AF82B7CA1B52708C00F02219 /* id3v1tag.h */,
+			);
+			path = id3v1;
+			sourceTree = "<group>";
+		};
+		AF82B7CB1B52708C00F02219 /* id3v2 */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7CC1B52708C00F02219 /* frames */,
+				AF82B7ED1B52708C00F02219 /* id3v2.2.0.txt */,
+				AF82B7EE1B52708C00F02219 /* id3v2.3.0.txt */,
+				AF82B7EF1B52708C00F02219 /* id3v2.4.0-frames.txt */,
+				AF82B7F01B52708C00F02219 /* id3v2.4.0-structure.txt */,
+				AF82B7F11B52708C00F02219 /* id3v2extendedheader.cpp */,
+				AF82B7F21B52708C00F02219 /* id3v2extendedheader.h */,
+				AF82B7F31B52708C00F02219 /* id3v2footer.cpp */,
+				AF82B7F41B52708C00F02219 /* id3v2footer.h */,
+				AF82B7F51B52708C00F02219 /* id3v2frame.cpp */,
+				AF82B7F61B52708C00F02219 /* id3v2frame.h */,
+				AF82B7F71B52708C00F02219 /* id3v2framefactory.cpp */,
+				AF82B7F81B52708C00F02219 /* id3v2framefactory.h */,
+				AF82B7F91B52708C00F02219 /* id3v2header.cpp */,
+				AF82B7FA1B52708C00F02219 /* id3v2header.h */,
+				AF82B7FB1B52708C00F02219 /* id3v2synchdata.cpp */,
+				AF82B7FC1B52708C00F02219 /* id3v2synchdata.h */,
+				AF82B7FD1B52708C00F02219 /* id3v2tag.cpp */,
+				AF82B7FE1B52708C00F02219 /* id3v2tag.h */,
+			);
+			path = id3v2;
+			sourceTree = "<group>";
+		};
+		AF82B7CC1B52708C00F02219 /* frames */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B7CD1B52708C00F02219 /* attachedpictureframe.cpp */,
+				AF82B7CE1B52708C00F02219 /* attachedpictureframe.h */,
+				AF82B7CF1B52708C00F02219 /* chapterframe.cpp */,
+				AF82B7D01B52708C00F02219 /* chapterframe.h */,
+				AF82B7D11B52708C00F02219 /* commentsframe.cpp */,
+				AF82B7D21B52708C00F02219 /* commentsframe.h */,
+				AF82B7D31B52708C00F02219 /* eventtimingcodesframe.cpp */,
+				AF82B7D41B52708C00F02219 /* eventtimingcodesframe.h */,
+				AF82B7D51B52708C00F02219 /* generalencapsulatedobjectframe.cpp */,
+				AF82B7D61B52708C00F02219 /* generalencapsulatedobjectframe.h */,
+				AF82B7D71B52708C00F02219 /* ownershipframe.cpp */,
+				AF82B7D81B52708C00F02219 /* ownershipframe.h */,
+				AF82B7D91B52708C00F02219 /* popularimeterframe.cpp */,
+				AF82B7DA1B52708C00F02219 /* popularimeterframe.h */,
+				AF82B7DB1B52708C00F02219 /* privateframe.cpp */,
+				AF82B7DC1B52708C00F02219 /* privateframe.h */,
+				AF82B7DD1B52708C00F02219 /* relativevolumeframe.cpp */,
+				AF82B7DE1B52708C00F02219 /* relativevolumeframe.h */,
+				AF82B7DF1B52708C00F02219 /* synchronizedlyricsframe.cpp */,
+				AF82B7E01B52708C00F02219 /* synchronizedlyricsframe.h */,
+				AF82B7E11B52708C00F02219 /* tableofcontentsframe.cpp */,
+				AF82B7E21B52708C00F02219 /* tableofcontentsframe.h */,
+				AF82B7E31B52708C00F02219 /* textidentificationframe.cpp */,
+				AF82B7E41B52708C00F02219 /* textidentificationframe.h */,
+				AF82B7E51B52708C00F02219 /* uniquefileidentifierframe.cpp */,
+				AF82B7E61B52708C00F02219 /* uniquefileidentifierframe.h */,
+				AF82B7E71B52708C00F02219 /* unknownframe.cpp */,
+				AF82B7E81B52708C00F02219 /* unknownframe.h */,
+				AF82B7E91B52708C00F02219 /* unsynchronizedlyricsframe.cpp */,
+				AF82B7EA1B52708C00F02219 /* unsynchronizedlyricsframe.h */,
+				AF82B7EB1B52708C00F02219 /* urllinkframe.cpp */,
+				AF82B7EC1B52708C00F02219 /* urllinkframe.h */,
+			);
+			path = frames;
+			sourceTree = "<group>";
+		};
+		AF82B8071B52708C00F02219 /* ogg */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8081B52708C00F02219 /* flac */,
+				AF82B80B1B52708C00F02219 /* oggfile.cpp */,
+				AF82B80C1B52708C00F02219 /* oggfile.h */,
+				AF82B80D1B52708C00F02219 /* oggpage.cpp */,
+				AF82B80E1B52708C00F02219 /* oggpage.h */,
+				AF82B80F1B52708C00F02219 /* oggpageheader.cpp */,
+				AF82B8101B52708C00F02219 /* oggpageheader.h */,
+				AF82B8111B52708C00F02219 /* opus */,
+				AF82B8161B52708C00F02219 /* speex */,
+				AF82B81B1B52708C00F02219 /* vorbis */,
+				AF82B8201B52708C00F02219 /* xiphcomment.cpp */,
+				AF82B8211B52708C00F02219 /* xiphcomment.h */,
+			);
+			path = ogg;
+			sourceTree = "<group>";
+		};
+		AF82B8081B52708C00F02219 /* flac */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8091B52708C00F02219 /* oggflacfile.cpp */,
+				AF82B80A1B52708C00F02219 /* oggflacfile.h */,
+			);
+			path = flac;
+			sourceTree = "<group>";
+		};
+		AF82B8111B52708C00F02219 /* opus */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8121B52708C00F02219 /* opusfile.cpp */,
+				AF82B8131B52708C00F02219 /* opusfile.h */,
+				AF82B8141B52708C00F02219 /* opusproperties.cpp */,
+				AF82B8151B52708C00F02219 /* opusproperties.h */,
+			);
+			path = opus;
+			sourceTree = "<group>";
+		};
+		AF82B8161B52708C00F02219 /* speex */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8171B52708C00F02219 /* speexfile.cpp */,
+				AF82B8181B52708C00F02219 /* speexfile.h */,
+				AF82B8191B52708C00F02219 /* speexproperties.cpp */,
+				AF82B81A1B52708C00F02219 /* speexproperties.h */,
+			);
+			path = speex;
+			sourceTree = "<group>";
+		};
+		AF82B81B1B52708C00F02219 /* vorbis */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B81C1B52708C00F02219 /* vorbisfile.cpp */,
+				AF82B81D1B52708C00F02219 /* vorbisfile.h */,
+				AF82B81E1B52708C00F02219 /* vorbisproperties.cpp */,
+				AF82B81F1B52708C00F02219 /* vorbisproperties.h */,
+			);
+			path = vorbis;
+			sourceTree = "<group>";
+		};
+		AF82B8221B52708C00F02219 /* riff */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8231B52708C00F02219 /* aiff */,
+				AF82B8281B52708C00F02219 /* rifffile.cpp */,
+				AF82B8291B52708C00F02219 /* rifffile.h */,
+				AF82B82A1B52708C00F02219 /* wav */,
+			);
+			path = riff;
+			sourceTree = "<group>";
+		};
+		AF82B8231B52708C00F02219 /* aiff */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8241B52708C00F02219 /* aifffile.cpp */,
+				AF82B8251B52708C00F02219 /* aifffile.h */,
+				AF82B8261B52708C00F02219 /* aiffproperties.cpp */,
+				AF82B8271B52708C00F02219 /* aiffproperties.h */,
+			);
+			path = aiff;
+			sourceTree = "<group>";
+		};
+		AF82B82A1B52708C00F02219 /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B82B1B52708C00F02219 /* infotag.cpp */,
+				AF82B82C1B52708C00F02219 /* infotag.h */,
+				AF82B82D1B52708C00F02219 /* wavfile.cpp */,
+				AF82B82E1B52708C00F02219 /* wavfile.h */,
+				AF82B82F1B52708C00F02219 /* wavproperties.cpp */,
+				AF82B8301B52708C00F02219 /* wavproperties.h */,
+			);
+			path = wav;
+			sourceTree = "<group>";
+		};
+		AF82B8311B52708C00F02219 /* s3m */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8321B52708C00F02219 /* s3mfile.cpp */,
+				AF82B8331B52708C00F02219 /* s3mfile.h */,
+				AF82B8341B52708C00F02219 /* s3mproperties.cpp */,
+				AF82B8351B52708C00F02219 /* s3mproperties.h */,
+			);
+			path = s3m;
+			sourceTree = "<group>";
+		};
+		AF82B83C1B52708C00F02219 /* toolkit */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B83D1B52708C00F02219 /* taglib.h */,
+				AF82B83E1B52708C00F02219 /* tbytevector.cpp */,
+				AF82B83F1B52708C00F02219 /* tbytevector.h */,
+				AF82B8401B52708C00F02219 /* tbytevectorlist.cpp */,
+				AF82B8411B52708C00F02219 /* tbytevectorlist.h */,
+				AF82B8421B52708C00F02219 /* tbytevectorstream.cpp */,
+				AF82B8431B52708C00F02219 /* tbytevectorstream.h */,
+				AF82B8441B52708C00F02219 /* tdebug.cpp */,
+				AF82B8451B52708C00F02219 /* tdebug.h */,
+				AF82B8461B52708C00F02219 /* tdebuglistener.cpp */,
+				AF82B8471B52708C00F02219 /* tdebuglistener.h */,
+				AF82B8481B52708C00F02219 /* tfile.cpp */,
+				AF82B8491B52708C00F02219 /* tfile.h */,
+				AF82B84A1B52708C00F02219 /* tfilestream.cpp */,
+				AF82B84B1B52708C00F02219 /* tfilestream.h */,
+				AF82B84C1B52708C00F02219 /* tiostream.cpp */,
+				AF82B84D1B52708C00F02219 /* tiostream.h */,
+				AF82B84E1B52708C00F02219 /* tlist.h */,
+				AF82B84F1B52708C00F02219 /* tlist.tcc */,
+				AF82B8501B52708C00F02219 /* tmap.h */,
+				AF82B8511B52708C00F02219 /* tmap.tcc */,
+				AF82B8521B52708C00F02219 /* tpropertymap.cpp */,
+				AF82B8531B52708C00F02219 /* tpropertymap.h */,
+				AF82B8541B52708C00F02219 /* trefcounter.cpp */,
+				AF82B8551B52708C00F02219 /* trefcounter.h */,
+				AF82B8561B52708C00F02219 /* tstring.cpp */,
+				AF82B8571B52708C00F02219 /* tstring.h */,
+				AF82B8581B52708C00F02219 /* tstringlist.cpp */,
+				AF82B8591B52708C00F02219 /* tstringlist.h */,
+				AF82B85A1B52708C00F02219 /* tutils.h */,
+				AF82B85B1B52708C00F02219 /* unicode.cpp */,
+				AF82B85C1B52708C00F02219 /* unicode.h */,
+			);
+			path = toolkit;
+			sourceTree = "<group>";
+		};
+		AF82B85D1B52708C00F02219 /* trueaudio */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B85E1B52708C00F02219 /* trueaudiofile.cpp */,
+				AF82B85F1B52708C00F02219 /* trueaudiofile.h */,
+				AF82B8601B52708C00F02219 /* trueaudioproperties.cpp */,
+				AF82B8611B52708C00F02219 /* trueaudioproperties.h */,
+			);
+			path = trueaudio;
+			sourceTree = "<group>";
+		};
+		AF82B8621B52708C00F02219 /* wavpack */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8631B52708C00F02219 /* wavpackfile.cpp */,
+				AF82B8641B52708C00F02219 /* wavpackfile.h */,
+				AF82B8651B52708C00F02219 /* wavpackproperties.cpp */,
+				AF82B8661B52708C00F02219 /* wavpackproperties.h */,
+			);
+			path = wavpack;
+			sourceTree = "<group>";
+		};
+		AF82B8671B52708C00F02219 /* xm */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8681B52708C00F02219 /* xmfile.cpp */,
+				AF82B8691B52708C00F02219 /* xmfile.h */,
+				AF82B86A1B52708C00F02219 /* xmproperties.cpp */,
+				AF82B86B1B52708C00F02219 /* xmproperties.h */,
+			);
+			path = xm;
+			sourceTree = "<group>";
+		};
+		AF82B86D1B52708C00F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8721B52708C00F02219 /* TagLib.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B8741B52709F00F02219 /* CocoaLibSpotify */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8751B52709F00F02219 /* .gitignore */,
+				AF82B8761B52709F00F02219 /* .gitmodules */,
+				AF82B8771B52709F00F02219 /* CHANGELOG.markdown */,
+				AF82B8781B52709F00F02219 /* common */,
+				AF82B8C51B52709F00F02219 /* Documentation */,
+				AF82B8C81B52709F00F02219 /* FAQ.markdown */,
+				AF82B8C91B52709F00F02219 /* iOS Library */,
+				AF82B92A1B5270A000F02219 /* LICENSE.txt */,
+				AF82B92B1B5270A000F02219 /* Mac Framework */,
+				AF82BA2E1B5270A000F02219 /* README.markdown */,
+				AF82BA2F1B5270A000F02219 /* Sample Projects README.txt */,
+				AF82BA301B5270A000F02219 /* scripts */,
+			);
+			name = CocoaLibSpotify;
+			path = Applefy/CocoaLibSpotify;
+			sourceTree = "<group>";
+		};
+		AF82B8781B52709F00F02219 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8791B52709F00F02219 /* AppledocSettings.plist */,
+				AF82B87A1B52709F00F02219 /* CocoaLibSpotify.h */,
+				AF82B87B1B52709F00F02219 /* CocoaLibSpotifyPlatformImports.h */,
+				AF82B87C1B52709F00F02219 /* SPAlbum.h */,
+				AF82B87D1B52709F00F02219 /* SPAlbum.m */,
+				AF82B87E1B52709F00F02219 /* SPAlbumBrowse.h */,
+				AF82B87F1B52709F00F02219 /* SPAlbumBrowse.m */,
+				AF82B8801B52709F00F02219 /* SPArtist.h */,
+				AF82B8811B52709F00F02219 /* SPArtist.m */,
+				AF82B8821B52709F00F02219 /* SPArtistBrowse.h */,
+				AF82B8831B52709F00F02219 /* SPArtistBrowse.m */,
+				AF82B8841B52709F00F02219 /* SPAsyncLoading.h */,
+				AF82B8851B52709F00F02219 /* SPAsyncLoading.m */,
+				AF82B8861B52709F00F02219 /* SPCircularBuffer.h */,
+				AF82B8871B52709F00F02219 /* SPCircularBuffer.m */,
+				AF82B8881B52709F00F02219 /* SPCommon.h */,
+				AF82B8891B52709F00F02219 /* SPCoreAudioController.h */,
+				AF82B88A1B52709F00F02219 /* SPCoreAudioController.m */,
+				AF82B88B1B52709F00F02219 /* SPErrorExtensions.h */,
+				AF82B88C1B52709F00F02219 /* SPErrorExtensions.m */,
+				AF82B88D1B52709F00F02219 /* SPImage.h */,
+				AF82B88E1B52709F00F02219 /* SPImage.m */,
+				AF82B88F1B52709F00F02219 /* SPPlaybackManager.h */,
+				AF82B8901B52709F00F02219 /* SPPlaybackManager.m */,
+				AF82B8911B52709F00F02219 /* SPPlaylist.h */,
+				AF82B8921B52709F00F02219 /* SPPlaylist.m */,
+				AF82B8931B52709F00F02219 /* SPPlaylistContainer.h */,
+				AF82B8941B52709F00F02219 /* SPPlaylistContainer.m */,
+				AF82B8951B52709F00F02219 /* SPPlaylistContainerInternal.h */,
+				AF82B8961B52709F00F02219 /* SPPlaylistFolder.h */,
+				AF82B8971B52709F00F02219 /* SPPlaylistFolder.m */,
+				AF82B8981B52709F00F02219 /* SPPlaylistFolderInternal.h */,
+				AF82B8991B52709F00F02219 /* SPPlaylistInternal.h */,
+				AF82B89A1B52709F00F02219 /* SPPlaylistItem.h */,
+				AF82B89B1B52709F00F02219 /* SPPlaylistItem.m */,
+				AF82B89C1B52709F00F02219 /* SPPlaylistItemInternal.h */,
+				AF82B89D1B52709F00F02219 /* SPPostTracksToInboxOperation.h */,
+				AF82B89E1B52709F00F02219 /* SPPostTracksToInboxOperation.m */,
+				AF82B89F1B52709F00F02219 /* SPSearch.h */,
+				AF82B8A01B52709F00F02219 /* SPSearch.m */,
+				AF82B8A11B52709F00F02219 /* SPSession.h */,
+				AF82B8A21B52709F00F02219 /* SPSession.m */,
+				AF82B8A31B52709F00F02219 /* SPSessionInternal.h */,
+				AF82B8A41B52709F00F02219 /* SPToplist.h */,
+				AF82B8A51B52709F00F02219 /* SPToplist.m */,
+				AF82B8A61B52709F00F02219 /* SPTrack.h */,
+				AF82B8A71B52709F00F02219 /* SPTrack.m */,
+				AF82B8A81B52709F00F02219 /* SPTrackInternal.h */,
+				AF82B8A91B52709F00F02219 /* SPUnknownPlaylist.h */,
+				AF82B8AA1B52709F00F02219 /* SPUnknownPlaylist.m */,
+				AF82B8AB1B52709F00F02219 /* SPURLExtensions.h */,
+				AF82B8AC1B52709F00F02219 /* SPURLExtensions.m */,
+				AF82B8AD1B52709F00F02219 /* SPUser.h */,
+				AF82B8AE1B52709F00F02219 /* SPUser.m */,
+				AF82B8AF1B52709F00F02219 /* Tests */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		AF82B8AF1B52709F00F02219 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8B01B52709F00F02219 /* NSData+Base64.h */,
+				AF82B8B11B52709F00F02219 /* NSData+Base64.m */,
+				AF82B8B21B52709F00F02219 /* SPAudioDeliveryTests.h */,
+				AF82B8B31B52709F00F02219 /* SPAudioDeliveryTests.m */,
+				AF82B8B41B52709F00F02219 /* SPConcurrencyTests.h */,
+				AF82B8B51B52709F00F02219 /* SPConcurrencyTests.m */,
+				AF82B8B61B52709F00F02219 /* SPMetadataTests.h */,
+				AF82B8B71B52709F00F02219 /* SPMetadataTests.m */,
+				AF82B8B81B52709F00F02219 /* SPPlaylistTests.h */,
+				AF82B8B91B52709F00F02219 /* SPPlaylistTests.m */,
+				AF82B8BA1B52709F00F02219 /* SPPostTracksToInboxTests.h */,
+				AF82B8BB1B52709F00F02219 /* SPPostTracksToInboxTests.m */,
+				AF82B8BC1B52709F00F02219 /* SPSearchTests.h */,
+				AF82B8BD1B52709F00F02219 /* SPSearchTests.m */,
+				AF82B8BE1B52709F00F02219 /* SPSessionTeardownTests.h */,
+				AF82B8BF1B52709F00F02219 /* SPSessionTeardownTests.m */,
+				AF82B8C01B52709F00F02219 /* SPSessionTests.h */,
+				AF82B8C11B52709F00F02219 /* SPSessionTests.m */,
+				AF82B8C21B52709F00F02219 /* SPTests.h */,
+				AF82B8C31B52709F00F02219 /* SPTests.m */,
+				AF82B8C41B52709F00F02219 /* TestConstants.h */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AF82B8C51B52709F00F02219 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8C61B52709F00F02219 /* com.spotify.CocoaLibSpotify.docset */,
+				AF82B8C71B52709F00F02219 /* Docs README.txt */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		AF82B8C91B52709F00F02219 /* iOS Library */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8CA1B52709F00F02219 /* CocoaLibSpotify iOS Library-Prefix.pch */,
+				AF82B8CB1B52709F00F02219 /* CocoaLibSpotify iOS Library.xcodeproj */,
+				AF82B8CE1B5270A000F02219 /* CocoaLibSpotify iOS Test Container */,
+				AF82B8DD1B5270A000F02219 /* Sample Projects */,
+				AF82B91B1B5270A000F02219 /* SPLoginResources.bundle */,
+				AF82B91C1B5270A000F02219 /* View Controllers */,
+			);
+			path = "iOS Library";
+			sourceTree = "<group>";
+		};
+		AF82B8CC1B52709F00F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA361B5270A100F02219 /* libCocoaLibSpotify.a */,
+				AF82BA381B5270A100F02219 /* CocoaLSTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B8CE1B5270A000F02219 /* CocoaLibSpotify iOS Test Container */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8CF1B5270A000F02219 /* AppDelegate.h */,
+				AF82B8D01B5270A000F02219 /* AppDelegate.m */,
+				AF82B8D11B5270A000F02219 /* CocoaLibSpotify iOS Test Container-Info.plist */,
+				AF82B8D21B5270A000F02219 /* CocoaLibSpotify iOS Test Container-Prefix.pch */,
+				AF82B8D31B5270A000F02219 /* Default-568h@2x.png */,
+				AF82B8D41B5270A000F02219 /* InfoPlist.strings */,
+				AF82B8D61B5270A000F02219 /* Fail.png */,
+				AF82B8D71B5270A000F02219 /* main.m */,
+				AF82B8D81B5270A000F02219 /* Pass.png */,
+				AF82B8D91B5270A000F02219 /* TestProgressCell.h */,
+				AF82B8DA1B5270A000F02219 /* TestProgressCell.m */,
+				AF82B8DB1B5270A000F02219 /* TestsViewController.h */,
+				AF82B8DC1B5270A000F02219 /* TestsViewController.m */,
+			);
+			path = "CocoaLibSpotify iOS Test Container";
+			sourceTree = "<group>";
+		};
+		AF82B8DD1B5270A000F02219 /* Sample Projects */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8DE1B5270A000F02219 /* Empty CocoaLibSpotify Project */,
+				AF82B8F11B5270A000F02219 /* Guess The Intro */,
+				AF82B9061B5270A000F02219 /* Simple Player */,
+			);
+			path = "Sample Projects";
+			sourceTree = "<group>";
+		};
+		AF82B8DE1B5270A000F02219 /* Empty CocoaLibSpotify Project */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8DF1B5270A000F02219 /* Empty CocoaLibSpotify Project */,
+				AF82B8ED1B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */,
+			);
+			path = "Empty CocoaLibSpotify Project";
+			sourceTree = "<group>";
+		};
+		AF82B8DF1B5270A000F02219 /* Empty CocoaLibSpotify Project */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8E01B5270A000F02219 /* AppDelegate.h */,
+				AF82B8E11B5270A000F02219 /* AppDelegate.m */,
+				AF82B8E21B5270A000F02219 /* Empty CocoaLibSpotify Project-Info.plist */,
+				AF82B8E31B5270A000F02219 /* Empty CocoaLibSpotify Project-Prefix.pch */,
+				AF82B8E41B5270A000F02219 /* InfoPlist.strings */,
+				AF82B8E61B5270A000F02219 /* ViewController_iPad.xib */,
+				AF82B8E81B5270A000F02219 /* ViewController_iPhone.xib */,
+				AF82B8EA1B5270A000F02219 /* main.m */,
+				AF82B8EB1B5270A000F02219 /* ViewController.h */,
+				AF82B8EC1B5270A000F02219 /* ViewController.m */,
+			);
+			path = "Empty CocoaLibSpotify Project";
+			sourceTree = "<group>";
+		};
+		AF82B8EE1B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA411B5270A100F02219 /* Empty CocoaLibSpotify Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B8F11B5270A000F02219 /* Guess The Intro */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8F21B5270A000F02219 /* Guess The Intro */,
+				AF82B9021B5270A000F02219 /* Guess The Intro.xcodeproj */,
+			);
+			path = "Guess The Intro";
+			sourceTree = "<group>";
+		};
+		AF82B8F21B5270A000F02219 /* Guess The Intro */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B8F31B5270A000F02219 /* Guess_The_IntroViewController.xib */,
+				AF82B8F51B5270A000F02219 /* InfoPlist.strings */,
+				AF82B8F71B5270A000F02219 /* MainWindow.xib */,
+				AF82B8F91B5270A000F02219 /* Guess The Intro-Info.plist */,
+				AF82B8FA1B5270A000F02219 /* Guess The Intro-Prefix.pch */,
+				AF82B8FB1B5270A000F02219 /* Guess_The_IntroAppDelegate.h */,
+				AF82B8FC1B5270A000F02219 /* Guess_The_IntroAppDelegate.m */,
+				AF82B8FD1B5270A000F02219 /* Guess_The_IntroViewController.h */,
+				AF82B8FE1B5270A000F02219 /* Guess_The_IntroViewController.m */,
+				AF82B8FF1B5270A000F02219 /* main.m */,
+				AF82B9001B5270A000F02219 /* SPArrayExtensions.h */,
+				AF82B9011B5270A000F02219 /* SPArrayExtensions.m */,
+			);
+			path = "Guess The Intro";
+			sourceTree = "<group>";
+		};
+		AF82B9031B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA4A1B5270A100F02219 /* Guess The Intro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B9061B5270A000F02219 /* Simple Player */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9071B5270A000F02219 /* Simple Player */,
+				AF82B9171B5270A000F02219 /* Simple Player.xcodeproj */,
+			);
+			path = "Simple Player";
+			sourceTree = "<group>";
+		};
+		AF82B9071B5270A000F02219 /* Simple Player */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9081B5270A000F02219 /* InfoPlist.strings */,
+				AF82B90A1B5270A000F02219 /* iPad */,
+				AF82B90D1B5270A000F02219 /* iPhone */,
+				AF82B9101B5270A000F02219 /* main.m */,
+				AF82B9111B5270A000F02219 /* RotatableViewController.h */,
+				AF82B9121B5270A000F02219 /* RotatableViewController.m */,
+				AF82B9131B5270A000F02219 /* Simple Player-Info.plist */,
+				AF82B9141B5270A000F02219 /* Simple Player-Prefix.pch */,
+				AF82B9151B5270A000F02219 /* Simple_PlayerAppDelegate.h */,
+				AF82B9161B5270A000F02219 /* Simple_PlayerAppDelegate.m */,
+			);
+			path = "Simple Player";
+			sourceTree = "<group>";
+		};
+		AF82B90A1B5270A000F02219 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B90B1B5270A000F02219 /* MainWindow_iPad.xib */,
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		AF82B90D1B5270A000F02219 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B90E1B5270A000F02219 /* MainWindow_iPhone.xib */,
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
+		AF82B9181B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA561B5270A100F02219 /* Simple Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B91C1B5270A000F02219 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B91D1B5270A000F02219 /* SPClientUpsellViewController.h */,
+				AF82B91E1B5270A000F02219 /* SPClientUpsellViewController.m */,
+				AF82B91F1B5270A000F02219 /* SPFacebookPermissionsViewController.h */,
+				AF82B9201B5270A000F02219 /* SPFacebookPermissionsViewController.m */,
+				AF82B9211B5270A000F02219 /* SPLicenseViewController.h */,
+				AF82B9221B5270A000F02219 /* SPLicenseViewController.m */,
+				AF82B9231B5270A000F02219 /* SPLoginLogicViewController.h */,
+				AF82B9241B5270A000F02219 /* SPLoginLogicViewController.m */,
+				AF82B9251B5270A000F02219 /* SPLoginViewController.h */,
+				AF82B9261B5270A000F02219 /* SPLoginViewController.m */,
+				AF82B9271B5270A000F02219 /* SPLoginViewControllerInternal.h */,
+				AF82B9281B5270A000F02219 /* SPSignupViewController.h */,
+				AF82B9291B5270A000F02219 /* SPSignupViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AF82B92B1B5270A000F02219 /* Mac Framework */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B92C1B5270A000F02219 /* CocoaLibSpotify Mac Framework.xcodeproj */,
+				AF82B92F1B5270A000F02219 /* CocoaLibSpotify Test Container */,
+				AF82B93A1B5270A000F02219 /* CocoaLibSpotify-Info.plist */,
+				AF82B93B1B5270A000F02219 /* CocoaLibSpotify-Prefix.pch */,
+				AF82B93C1B5270A000F02219 /* InfoPlist.strings */,
+				AF82B93E1B5270A000F02219 /* libspotify-12.1.45-Darwin-universal */,
+				AF82B9E31B5270A000F02219 /* Sample Projects */,
+			);
+			path = "Mac Framework";
+			sourceTree = "<group>";
+		};
+		AF82B92D1B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA3C1B5270A100F02219 /* CocoaLibSpotify.framework */,
+				AF82BA3E1B5270A100F02219 /* CocoaLSTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B92F1B5270A000F02219 /* CocoaLibSpotify Test Container */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9301B5270A000F02219 /* CocoaLibSpotify Test Container-Info.plist */,
+				AF82B9311B5270A000F02219 /* CocoaLibSpotify Test Container-Prefix.pch */,
+				AF82B9321B5270A000F02219 /* Credits.rtf */,
+				AF82B9341B5270A000F02219 /* InfoPlist.strings */,
+				AF82B9361B5270A000F02219 /* main.m */,
+				AF82B9371B5270A000F02219 /* RunTests.sh */,
+				AF82B9381B5270A000F02219 /* TestRunner.h */,
+				AF82B9391B5270A000F02219 /* TestRunner.m */,
+			);
+			path = "CocoaLibSpotify Test Container";
+			sourceTree = "<group>";
+		};
+		AF82B93E1B5270A000F02219 /* libspotify-12.1.45-Darwin-universal */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B93F1B5270A000F02219 /* ChangeLog */,
+				AF82B9401B5270A000F02219 /* docs */,
+				AF82B9801B5270A000F02219 /* examples */,
+				AF82B9C61B5270A000F02219 /* libspotify.framework */,
+				AF82B9C71B5270A000F02219 /* LICENSE */,
+				AF82B9C81B5270A000F02219 /* licenses.xhtml */,
+				AF82B9C91B5270A000F02219 /* man3 */,
+				AF82B9E21B5270A000F02219 /* README */,
+			);
+			path = "libspotify-12.1.45-Darwin-universal";
+			sourceTree = "<group>";
+		};
+		AF82B9401B5270A000F02219 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9411B5270A000F02219 /* html */,
+				AF82B97D1B5270A000F02219 /* images */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		AF82B9411B5270A000F02219 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9421B5270A000F02219 /* annotated.html */,
+				AF82B9431B5270A000F02219 /* api_8h.html */,
+				AF82B9441B5270A000F02219 /* bc_s.png */,
+				AF82B9451B5270A000F02219 /* bdwn.png */,
+				AF82B9461B5270A000F02219 /* browse_8c-example.html */,
+				AF82B9471B5270A000F02219 /* classes.html */,
+				AF82B9481B5270A000F02219 /* closed.png */,
+				AF82B9491B5270A000F02219 /* doxygen.css */,
+				AF82B94A1B5270A000F02219 /* doxygen.png */,
+				AF82B94B1B5270A000F02219 /* examples.html */,
+				AF82B94C1B5270A000F02219 /* files.html */,
+				AF82B94D1B5270A000F02219 /* functions.html */,
+				AF82B94E1B5270A000F02219 /* functions_vars.html */,
+				AF82B94F1B5270A000F02219 /* globals.html */,
+				AF82B9501B5270A000F02219 /* globals_0x69.html */,
+				AF82B9511B5270A000F02219 /* globals_0x73.html */,
+				AF82B9521B5270A000F02219 /* globals_0x74.html */,
+				AF82B9531B5270A000F02219 /* globals_defs.html */,
+				AF82B9541B5270A000F02219 /* globals_enum.html */,
+				AF82B9551B5270A000F02219 /* globals_eval.html */,
+				AF82B9561B5270A000F02219 /* globals_func.html */,
+				AF82B9571B5270A000F02219 /* globals_type.html */,
+				AF82B9581B5270A000F02219 /* group__album.html */,
+				AF82B9591B5270A000F02219 /* group__albumbrowse.html */,
+				AF82B95A1B5270A000F02219 /* group__artist.html */,
+				AF82B95B1B5270A000F02219 /* group__artistbrowse.html */,
+				AF82B95C1B5270A000F02219 /* group__error.html */,
+				AF82B95D1B5270A000F02219 /* group__image.html */,
+				AF82B95E1B5270A000F02219 /* group__inbox.html */,
+				AF82B95F1B5270A000F02219 /* group__link.html */,
+				AF82B9601B5270A000F02219 /* group__playlist.html */,
+				AF82B9611B5270A000F02219 /* group__search.html */,
+				AF82B9621B5270A000F02219 /* group__session.html */,
+				AF82B9631B5270A000F02219 /* group__toplist.html */,
+				AF82B9641B5270A000F02219 /* group__track.html */,
+				AF82B9651B5270A000F02219 /* group__types.html */,
+				AF82B9661B5270A000F02219 /* group__user.html */,
+				AF82B9671B5270A000F02219 /* index.html */,
+				AF82B9681B5270A000F02219 /* jquery.js */,
+				AF82B9691B5270A000F02219 /* jukebox_8c-example.html */,
+				AF82B96A1B5270A000F02219 /* modules.html */,
+				AF82B96B1B5270A000F02219 /* nav_f.png */,
+				AF82B96C1B5270A000F02219 /* nav_h.png */,
+				AF82B96D1B5270A000F02219 /* open.png */,
+				AF82B96E1B5270A000F02219 /* search_8c-example.html */,
+				AF82B96F1B5270A000F02219 /* structsp__audio__buffer__stats.html */,
+				AF82B9701B5270A000F02219 /* structsp__audioformat.html */,
+				AF82B9711B5270A000F02219 /* structsp__offline__sync__status.html */,
+				AF82B9721B5270A000F02219 /* structsp__playlist__callbacks.html */,
+				AF82B9731B5270A000F02219 /* structsp__playlistcontainer__callbacks.html */,
+				AF82B9741B5270A000F02219 /* structsp__session__callbacks.html */,
+				AF82B9751B5270A000F02219 /* structsp__session__config.html */,
+				AF82B9761B5270A000F02219 /* structsp__subscribers.html */,
+				AF82B9771B5270A000F02219 /* tab_a.png */,
+				AF82B9781B5270A000F02219 /* tab_b.png */,
+				AF82B9791B5270A000F02219 /* tab_h.png */,
+				AF82B97A1B5270A000F02219 /* tab_s.png */,
+				AF82B97B1B5270A000F02219 /* tabs.css */,
+				AF82B97C1B5270A000F02219 /* toplist_8c-example.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		AF82B97D1B5270A000F02219 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B97E1B5270A000F02219 /* spotify-core-logo-128x128.png */,
+				AF82B97F1B5270A000F02219 /* spotify-core.txt */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		AF82B9801B5270A000F02219 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9811B5270A000F02219 /* appkey.c */,
+				AF82B9821B5270A000F02219 /* common.mk */,
+				AF82B9831B5270A000F02219 /* jukebox */,
+				AF82B9921B5270A000F02219 /* localfiles */,
+				AF82B9961B5270A000F02219 /* Makefile */,
+				AF82B9971B5270A000F02219 /* Randomify */,
+				AF82B9AA1B5270A000F02219 /* spshell */,
+				AF82B9C21B5270A000F02219 /* stub */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		AF82B9831B5270A000F02219 /* jukebox */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9841B5270A000F02219 /* alsa-audio.c */,
+				AF82B9851B5270A000F02219 /* audio.c */,
+				AF82B9861B5270A000F02219 /* audio.h */,
+				AF82B9871B5270A000F02219 /* dummy-audio.c */,
+				AF82B9881B5270A000F02219 /* jukebox.c */,
+				AF82B9891B5270A000F02219 /* Makefile */,
+				AF82B98A1B5270A000F02219 /* openal-audio.c */,
+				AF82B98B1B5270A000F02219 /* osx */,
+				AF82B98F1B5270A000F02219 /* osx-audio.c */,
+				AF82B9901B5270A000F02219 /* playtrack.c */,
+				AF82B9911B5270A000F02219 /* queue.h */,
+			);
+			path = jukebox;
+			sourceTree = "<group>";
+		};
+		AF82B98B1B5270A000F02219 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B98C1B5270A000F02219 /* jukebox.xcodeproj */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		AF82B98D1B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA4D1B5270A100F02219 /* jukebox */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B9921B5270A000F02219 /* localfiles */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9931B5270A000F02219 /* main.c */,
+				AF82B9941B5270A000F02219 /* main.h */,
+				AF82B9951B5270A000F02219 /* Makefile */,
+			);
+			path = localfiles;
+			sourceTree = "<group>";
+		};
+		AF82B9971B5270A000F02219 /* Randomify */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9981B5270A000F02219 /* InfoPlist.strings */,
+				AF82B99A1B5270A000F02219 /* MainMenu.xib */,
+				AF82B99C1B5270A000F02219 /* main.m */,
+				AF82B99D1B5270A000F02219 /* Randomify-Info.plist */,
+				AF82B99E1B5270A000F02219 /* Randomify.xcodeproj */,
+				AF82B9A11B5270A000F02219 /* Randomify_Prefix.pch */,
+				AF82B9A21B5270A000F02219 /* RandomifyAppDelegate.h */,
+				AF82B9A31B5270A000F02219 /* RandomifyAppDelegate.m */,
+				AF82B9A41B5270A000F02219 /* SpotifyPlaylist.h */,
+				AF82B9A51B5270A000F02219 /* SpotifyPlaylist.m */,
+				AF82B9A61B5270A000F02219 /* SpotifySession.h */,
+				AF82B9A71B5270A000F02219 /* SpotifySession.m */,
+				AF82B9A81B5270A000F02219 /* SpotifyTrack.h */,
+				AF82B9A91B5270A000F02219 /* SpotifyTrack.m */,
+			);
+			path = Randomify;
+			sourceTree = "<group>";
+		};
+		AF82B99F1B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA531B5270A100F02219 /* Randomify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B9AA1B5270A000F02219 /* spshell */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9AB1B5270A000F02219 /* browse.c */,
+				AF82B9AC1B5270A000F02219 /* cmd.c */,
+				AF82B9AD1B5270A000F02219 /* cmd.h */,
+				AF82B9AE1B5270A000F02219 /* inbox.c */,
+				AF82B9AF1B5270A000F02219 /* Makefile */,
+				AF82B9B01B5270A000F02219 /* osx */,
+				AF82B9B41B5270A000F02219 /* playlist.c */,
+				AF82B9B51B5270A000F02219 /* scrobbling.c */,
+				AF82B9B61B5270A000F02219 /* search.c */,
+				AF82B9B71B5270A000F02219 /* spshell.c */,
+				AF82B9B81B5270A000F02219 /* spshell.h */,
+				AF82B9B91B5270A000F02219 /* spshell_posix.c */,
+				AF82B9BA1B5270A000F02219 /* spshell_win32.c */,
+				AF82B9BB1B5270A000F02219 /* star.c */,
+				AF82B9BC1B5270A000F02219 /* test.c */,
+				AF82B9BD1B5270A000F02219 /* toplist.c */,
+				AF82B9BE1B5270A000F02219 /* win32 */,
+			);
+			path = spshell;
+			sourceTree = "<group>";
+		};
+		AF82B9B01B5270A000F02219 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9B11B5270A000F02219 /* spshell.xcodeproj */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		AF82B9B21B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA5C1B5270A100F02219 /* spshell */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B9BE1B5270A000F02219 /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9BF1B5270A000F02219 /* spshell.vcproj */,
+				AF82B9C01B5270A000F02219 /* spshell.vcxproj */,
+				AF82B9C11B5270A000F02219 /* spshell.vcxproj.filters */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		AF82B9C21B5270A000F02219 /* stub */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9C31B5270A000F02219 /* main.c */,
+				AF82B9C41B5270A000F02219 /* main.h */,
+				AF82B9C51B5270A000F02219 /* Makefile */,
+			);
+			path = stub;
+			sourceTree = "<group>";
+		};
+		AF82B9C91B5270A000F02219 /* man3 */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9CA1B5270A000F02219 /* album.3spotify */,
+				AF82B9CB1B5270A000F02219 /* albumbrowse.3spotify */,
+				AF82B9CC1B5270A000F02219 /* api.h.3spotify */,
+				AF82B9CD1B5270A000F02219 /* artist.3spotify */,
+				AF82B9CE1B5270A000F02219 /* artistbrowse.3spotify */,
+				AF82B9CF1B5270A000F02219 /* error.3spotify */,
+				AF82B9D01B5270A000F02219 /* image.3spotify */,
+				AF82B9D11B5270A000F02219 /* inbox.3spotify */,
+				AF82B9D21B5270A000F02219 /* link.3spotify */,
+				AF82B9D31B5270A000F02219 /* playlist.3spotify */,
+				AF82B9D41B5270A000F02219 /* search.3spotify */,
+				AF82B9D51B5270A000F02219 /* session.3spotify */,
+				AF82B9D61B5270A000F02219 /* sp_audio_buffer_stats.3spotify */,
+				AF82B9D71B5270A000F02219 /* sp_audioformat.3spotify */,
+				AF82B9D81B5270A000F02219 /* sp_offline_sync_status.3spotify */,
+				AF82B9D91B5270A000F02219 /* sp_playlist_callbacks.3spotify */,
+				AF82B9DA1B5270A000F02219 /* sp_playlistcontainer_callbacks.3spotify */,
+				AF82B9DB1B5270A000F02219 /* sp_session_callbacks.3spotify */,
+				AF82B9DC1B5270A000F02219 /* sp_session_config.3spotify */,
+				AF82B9DD1B5270A000F02219 /* sp_subscribers.3spotify */,
+				AF82B9DE1B5270A000F02219 /* toplist.3spotify */,
+				AF82B9DF1B5270A000F02219 /* track.3spotify */,
+				AF82B9E01B5270A000F02219 /* types.3spotify */,
+				AF82B9E11B5270A000F02219 /* user.3spotify */,
+			);
+			path = man3;
+			sourceTree = "<group>";
+		};
+		AF82B9E31B5270A000F02219 /* Sample Projects */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9E41B5270A000F02219 /* Empty CocoaLibSpotify Project */,
+				AF82B9F51B5270A000F02219 /* Guess The Intro */,
+				AF82BA081B5270A000F02219 /* Offline Playlists */,
+				AF82BA1D1B5270A000F02219 /* SimplePlayer */,
+			);
+			path = "Sample Projects";
+			sourceTree = "<group>";
+		};
+		AF82B9E41B5270A000F02219 /* Empty CocoaLibSpotify Project */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9E51B5270A000F02219 /* Empty CocoaLibSpotify Project */,
+				AF82B9F11B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */,
+			);
+			path = "Empty CocoaLibSpotify Project";
+			sourceTree = "<group>";
+		};
+		AF82B9E51B5270A000F02219 /* Empty CocoaLibSpotify Project */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9E61B5270A000F02219 /* AppDelegate.h */,
+				AF82B9E71B5270A000F02219 /* AppDelegate.m */,
+				AF82B9E81B5270A000F02219 /* Empty CocoaLibSpotify Project-Info.plist */,
+				AF82B9E91B5270A000F02219 /* Empty CocoaLibSpotify Project-Prefix.pch */,
+				AF82B9EA1B5270A000F02219 /* Credits.rtf */,
+				AF82B9EC1B5270A000F02219 /* InfoPlist.strings */,
+				AF82B9EE1B5270A000F02219 /* MainMenu.xib */,
+				AF82B9F01B5270A000F02219 /* main.m */,
+			);
+			path = "Empty CocoaLibSpotify Project";
+			sourceTree = "<group>";
+		};
+		AF82B9F21B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA441B5270A100F02219 /* Empty CocoaLibSpotify Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82B9F51B5270A000F02219 /* Guess The Intro */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9F61B5270A000F02219 /* Guess The Intro */,
+				AF82BA041B5270A000F02219 /* Guess The Intro.xcodeproj */,
+			);
+			path = "Guess The Intro";
+			sourceTree = "<group>";
+		};
+		AF82B9F61B5270A000F02219 /* Guess The Intro */ = {
+			isa = PBXGroup;
+			children = (
+				AF82B9F71B5270A000F02219 /* Credits.rtf */,
+				AF82B9F91B5270A000F02219 /* InfoPlist.strings */,
+				AF82B9FB1B5270A000F02219 /* MainMenu.xib */,
+				AF82B9FD1B5270A000F02219 /* Guess The Intro-Info.plist */,
+				AF82B9FE1B5270A000F02219 /* Guess The Intro-Prefix.pch */,
+				AF82B9FF1B5270A000F02219 /* Guess_The_IntroAppDelegate.h */,
+				AF82BA001B5270A000F02219 /* Guess_The_IntroAppDelegate.m */,
+				AF82BA011B5270A000F02219 /* main.m */,
+				AF82BA021B5270A000F02219 /* SPArrayExtensions.h */,
+				AF82BA031B5270A000F02219 /* SPArrayExtensions.m */,
+			);
+			path = "Guess The Intro";
+			sourceTree = "<group>";
+		};
+		AF82BA051B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA471B5270A100F02219 /* Guess The Intro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82BA081B5270A000F02219 /* Offline Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA091B5270A000F02219 /* Offline Playlists */,
+				AF82BA191B5270A000F02219 /* Offline Playlists.xcodeproj */,
+			);
+			path = "Offline Playlists";
+			sourceTree = "<group>";
+		};
+		AF82BA091B5270A000F02219 /* Offline Playlists */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA0A1B5270A000F02219 /* AppDelegate.h */,
+				AF82BA0B1B5270A000F02219 /* AppDelegate.m */,
+				AF82BA0C1B5270A000F02219 /* Credits.rtf */,
+				AF82BA0E1B5270A000F02219 /* InfoPlist.strings */,
+				AF82BA101B5270A000F02219 /* MainMenu.xib */,
+				AF82BA121B5270A000F02219 /* main.m */,
+				AF82BA131B5270A000F02219 /* Offline Playlists-Info.plist */,
+				AF82BA141B5270A000F02219 /* Offline Playlists-Prefix.pch */,
+				AF82BA151B5270A000F02219 /* SPPlaylist+SPPlaylistOfflineExtensions.h */,
+				AF82BA161B5270A000F02219 /* SPPlaylist+SPPlaylistOfflineExtensions.m */,
+				AF82BA171B5270A000F02219 /* SPPlaylistItem+SPPlaylistItemOfflineExtensions.h */,
+				AF82BA181B5270A000F02219 /* SPPlaylistItem+SPPlaylistItemOfflineExtensions.m */,
+			);
+			path = "Offline Playlists";
+			sourceTree = "<group>";
+		};
+		AF82BA1A1B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA501B5270A100F02219 /* Offline Playlists.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82BA1D1B5270A000F02219 /* SimplePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA1E1B5270A000F02219 /* SimplePlayer */,
+				AF82BA2A1B5270A000F02219 /* SimplePlayer.xcodeproj */,
+			);
+			path = SimplePlayer;
+			sourceTree = "<group>";
+		};
+		AF82BA1E1B5270A000F02219 /* SimplePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA1F1B5270A000F02219 /* Credits.rtf */,
+				AF82BA211B5270A000F02219 /* InfoPlist.strings */,
+				AF82BA231B5270A000F02219 /* MainMenu.xib */,
+				AF82BA251B5270A000F02219 /* main.m */,
+				AF82BA261B5270A000F02219 /* SimplePlayer-Info.plist */,
+				AF82BA271B5270A000F02219 /* SimplePlayer-Prefix.pch */,
+				AF82BA281B5270A000F02219 /* SimplePlayerAppDelegate.h */,
+				AF82BA291B5270A000F02219 /* SimplePlayerAppDelegate.m */,
+			);
+			path = SimplePlayer;
+			sourceTree = "<group>";
+		};
+		AF82BA2B1B5270A000F02219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA591B5270A100F02219 /* SimplePlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF82BA301B5270A000F02219 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				AF82BA311B5270A000F02219 /* generate-docset.sh */,
+				AF82BA321B5270A000F02219 /* update-libspotify-version.py */,
+			);
+			path = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +2065,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				945533121B4EEC3300FDDACD /* PBXTargetDependency */,
-				945533081B4ED3A500FDDACD /* PBXTargetDependency */,
 			);
 			name = Applefy;
 			productName = Applefy;
@@ -242,18 +2091,63 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = 500D51ED1461569A0009B5FB;
 			productRefGroup = 500D51F91461569A0009B5FB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 945532FD1B4ED39600FDDACD /* Products */;
-					ProjectRef = 945532FC1B4ED39600FDDACD /* CocoaLibSpotify Mac Framework.xcodeproj */;
+					ProductGroup = AF82B8CC1B52709F00F02219 /* Products */;
+					ProjectRef = AF82B8CB1B52709F00F02219 /* CocoaLibSpotify iOS Library.xcodeproj */;
 				},
 				{
-					ProductGroup = 945532B01B4ECC7200FDDACD /* Products */;
-					ProjectRef = 945532AF1B4ECC7200FDDACD /* TagLib.xcodeproj */;
+					ProductGroup = AF82B92D1B5270A000F02219 /* Products */;
+					ProjectRef = AF82B92C1B5270A000F02219 /* CocoaLibSpotify Mac Framework.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B8EE1B5270A000F02219 /* Products */;
+					ProjectRef = AF82B8ED1B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B9F21B5270A000F02219 /* Products */;
+					ProjectRef = AF82B9F11B5270A000F02219 /* Empty CocoaLibSpotify Project.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82BA051B5270A000F02219 /* Products */;
+					ProjectRef = AF82BA041B5270A000F02219 /* Guess The Intro.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B9031B5270A000F02219 /* Products */;
+					ProjectRef = AF82B9021B5270A000F02219 /* Guess The Intro.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B98D1B5270A000F02219 /* Products */;
+					ProjectRef = AF82B98C1B5270A000F02219 /* jukebox.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82BA1A1B5270A000F02219 /* Products */;
+					ProjectRef = AF82BA191B5270A000F02219 /* Offline Playlists.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B99F1B5270A000F02219 /* Products */;
+					ProjectRef = AF82B99E1B5270A000F02219 /* Randomify.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B9181B5270A000F02219 /* Products */;
+					ProjectRef = AF82B9171B5270A000F02219 /* Simple Player.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82BA2B1B5270A000F02219 /* Products */;
+					ProjectRef = AF82BA2A1B5270A000F02219 /* SimplePlayer.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B9B21B5270A000F02219 /* Products */;
+					ProjectRef = AF82B9B11B5270A000F02219 /* spshell.xcodeproj */;
+				},
+				{
+					ProductGroup = AF82B86D1B52708C00F02219 /* Products */;
+					ProjectRef = AF82B86C1B52708C00F02219 /* TagLib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -264,32 +2158,109 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		945532B51B4ECC7300FDDACD /* TagLib.framework */ = {
+		AF82B8721B52708C00F02219 /* TagLib.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = TagLib.framework;
-			remoteRef = 945532B41B4ECC7300FDDACD /* PBXContainerItemProxy */;
+			remoteRef = AF82B8711B52708C00F02219 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		945532B71B4ECC7300FDDACD /* TagLib.bundle */ = {
+		AF82BA361B5270A100F02219 /* libCocoaLibSpotify.a */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = TagLib.bundle;
-			remoteRef = 945532B61B4ECC7300FDDACD /* PBXContainerItemProxy */;
+			fileType = archive.ar;
+			path = libCocoaLibSpotify.a;
+			remoteRef = AF82BA351B5270A100F02219 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		945533021B4ED39600FDDACD /* CocoaLibSpotify.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLibSpotify.framework;
-			remoteRef = 945533011B4ED39600FDDACD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		945533041B4ED39600FDDACD /* CocoaLSTests.app */ = {
+		AF82BA381B5270A100F02219 /* CocoaLSTests.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = CocoaLSTests.app;
-			remoteRef = 945533031B4ED39600FDDACD /* PBXContainerItemProxy */;
+			remoteRef = AF82BA371B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA3C1B5270A100F02219 /* CocoaLibSpotify.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLibSpotify.framework;
+			remoteRef = AF82BA3B1B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA3E1B5270A100F02219 /* CocoaLSTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CocoaLSTests.app;
+			remoteRef = AF82BA3D1B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA411B5270A100F02219 /* Empty CocoaLibSpotify Project.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Empty CocoaLibSpotify Project.app";
+			remoteRef = AF82BA401B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA441B5270A100F02219 /* Empty CocoaLibSpotify Project.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Empty CocoaLibSpotify Project.app";
+			remoteRef = AF82BA431B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA471B5270A100F02219 /* Guess The Intro.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Guess The Intro.app";
+			remoteRef = AF82BA461B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA4A1B5270A100F02219 /* Guess The Intro.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Guess The Intro.app";
+			remoteRef = AF82BA491B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA4D1B5270A100F02219 /* jukebox */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = jukebox;
+			remoteRef = AF82BA4C1B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA501B5270A100F02219 /* Offline Playlists.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Offline Playlists.app";
+			remoteRef = AF82BA4F1B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA531B5270A100F02219 /* Randomify.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Randomify.app;
+			remoteRef = AF82BA521B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA561B5270A100F02219 /* Simple Player.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Simple Player.app";
+			remoteRef = AF82BA551B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA591B5270A100F02219 /* SimplePlayer.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SimplePlayer.app;
+			remoteRef = AF82BA581B5270A100F02219 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AF82BA5C1B5270A100F02219 /* spshell */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = spshell;
+			remoteRef = AF82BA5B1B5270A100F02219 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -312,32 +2283,243 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF82B29C1B5268FB00F02219 /* appkey.c in Sources */,
 				945532DB1B4ED04F00FDDACD /* AppDelegate.mm in Sources */,
 				945532CB1B4ECE6600FDDACD /* main.m in Sources */,
-				94705EE61B5007350054F4CD /* NSString+TStringAdditions.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		945533081B4ED3A500FDDACD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CocoaLibSpotify;
-			targetProxy = 945533071B4ED3A500FDDACD /* PBXContainerItemProxy */;
-		};
-		945533121B4EEC3300FDDACD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "TagLib Framework";
-			targetProxy = 945533111B4EEC3300FDDACD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		945533091B4ED5D400FDDACD /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9455330A1B4ED5D400FDDACD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF82B7781B52708C00F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B7791B52708C00F02219 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B8D41B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8D51B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B8E41B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8E51B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B8E61B5270A000F02219 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8E71B5270A000F02219 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		AF82B8E81B5270A000F02219 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8E91B5270A000F02219 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		AF82B8F31B5270A000F02219 /* Guess_The_IntroViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8F41B5270A000F02219 /* en */,
+			);
+			name = Guess_The_IntroViewController.xib;
+			sourceTree = "<group>";
+		};
+		AF82B8F51B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8F61B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B8F71B5270A000F02219 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B8F81B5270A000F02219 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		AF82B9081B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9091B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B90B1B5270A000F02219 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B90C1B5270A000F02219 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		AF82B90E1B5270A000F02219 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B90F1B5270A000F02219 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		AF82B9321B5270A000F02219 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9331B5270A000F02219 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF82B9341B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9351B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B93C1B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B93D1B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B9981B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9991B5270A000F02219 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B99A1B5270A000F02219 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B99B1B5270A000F02219 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF82B9EA1B5270A000F02219 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9EB1B5270A000F02219 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF82B9EC1B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9ED1B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B9EE1B5270A000F02219 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9EF1B5270A000F02219 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF82B9F71B5270A000F02219 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9F81B5270A000F02219 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF82B9F91B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9FA1B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82B9FB1B5270A000F02219 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82B9FC1B5270A000F02219 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF82BA0C1B5270A000F02219 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82BA0D1B5270A000F02219 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF82BA0E1B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82BA0F1B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82BA101B5270A000F02219 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82BA111B5270A000F02219 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF82BA1F1B5270A000F02219 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82BA201B5270A000F02219 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF82BA211B5270A000F02219 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82BA221B5270A000F02219 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF82BA231B5270A000F02219 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF82BA241B5270A000F02219 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
