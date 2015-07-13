@@ -5,14 +5,16 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "943D3A902E81F91CECECBB25332CA41C7497B9A0" : 0,
+    "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C" : 0,
     "18209CF2011AB3382E179553C574338285D94ACE" : 0,
-    "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C" : 0
+    "F22831D409CFD7EF0DF00395D7A5CBA4ED85D91C" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0CF4A323-52FA-476D-A9BF-3C90DC1A797A",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "943D3A902E81F91CECECBB25332CA41C7497B9A0" : "Applefy\/",
+    "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C" : "cocoalibspotify\/",
     "18209CF2011AB3382E179553C574338285D94ACE" : "TagLib\/TagLib.framework\/",
-    "69B0FCE80A47E7C2B35EE89FA9C35B69587C596C" : "cocoalibspotify\/"
+    "F22831D409CFD7EF0DF00395D7A5CBA4ED85D91C" : "Applefy\/Applefy\/TagLib\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Applefy",
   "DVTSourceControlWorkspaceBlueprintVersion" : 203,
@@ -32,6 +34,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:ryanb93\/Applefy.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "943D3A902E81F91CECECBB25332CA41C7497B9A0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/einfallstoll\/TagLib",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F22831D409CFD7EF0DF00395D7A5CBA4ED85D91C"
     }
   ]
 }
