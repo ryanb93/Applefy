@@ -154,9 +154,11 @@
     
     NSString *path = [NSString stringWithFormat:@"%@/Applefy/%@", NSHomeDirectory(), [self.playlistButton.titleOfSelectedItem stringByReplacingOccurrencesOfString:@"/" withString:@" "]];
     
-    if(![fileManager fileExistsAtPath:path isDirectory:&isDir])
-        if(![fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:NULL])
+    if(![fileManager fileExistsAtPath:path isDirectory:&isDir]) {
+        if(![fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:NULL]) {
             NSLog(@"Error: Create folder failed %@", path);
+        }
+    }
 
     NSURL *emptyMP3Path = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/5sec.mp3", [[NSBundle mainBundle] resourcePath]]];
     
@@ -190,8 +192,19 @@
     }
     
     [self.saveButton setEnabled:YES];
-    
-    
+    [self showCompleteAlertWithPath:path];
+}
+
+- (void)showCompleteAlertWithPath:(NSString *)path {
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert addButtonWithTitle:@"Show"];
+    [alert addButtonWithTitle:@"OK"];
+    [alert setMessageText:@"Playlist exported"];
+    [alert setInformativeText:@"The playlist has been extracted to your home folder."];
+    [alert setAlertStyle:NSInformationalAlertStyle];
+    if ([alert runModal] == NSAlertFirstButtonReturn) {
+        [[NSWorkspace sharedWorkspace]openFile:path withApplication:@"Finder"];
+    }
 }
 
 - (IBAction)buyCoffee:(id)sender {
