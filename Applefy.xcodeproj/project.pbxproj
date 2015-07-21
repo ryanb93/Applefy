@@ -12,6 +12,8 @@
 		945532DB1B4ED04F00FDDACD /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 945532DA1B4ED04F00FDDACD /* AppDelegate.mm */; };
 		9455330B1B4ED5D400FDDACD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 945533091B4ED5D400FDDACD /* MainMenu.xib */; };
 		945533101B4EDA8500FDDACD /* 5sec.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9455330F1B4EDA8500FDDACD /* 5sec.mp3 */; };
+		947309F21B5ED7F1009E4332 /* TagLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF82B8721B52708C00F02219 /* TagLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		947309F31B5ED7FB009E4332 /* CocoaLibSpotify.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF82BA3C1B5270A100F02219 /* CocoaLibSpotify.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF82B29C1B5268FB00F02219 /* appkey.c in Sources */ = {isa = PBXBuildFile; fileRef = AF82B29B1B5268FB00F02219 /* appkey.c */; };
 		AF82B8731B52709400F02219 /* TagLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF82B8721B52708C00F02219 /* TagLib.framework */; };
 		AF82BA5D1B5270A600F02219 /* CocoaLibSpotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF82BA3C1B5270A100F02219 /* CocoaLibSpotify.framework */; };
@@ -128,10 +130,12 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		945532E61B4ED2E700FDDACD /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				947309F21B5ED7F1009E4332 /* TagLib.framework in Embed Frameworks */,
+				947309F31B5ED7FB009E4332 /* CocoaLibSpotify.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;

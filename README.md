@@ -1,8 +1,9 @@
-# Applefy
+#Applefy
 
 An OSX application to store Spotify playlists as MP3's that can be imported into iTunes to be matched by Apple Music.
 
-[Latest binary download](https://github.com/ryanb93/Applefy/releases)
+[![](http://i.imgur.com/Qy9A0VP.png =120x120)  
+Latest binary download](https://github.com/ryanb93/Applefy/releases)
 
 Instructions
 ----
