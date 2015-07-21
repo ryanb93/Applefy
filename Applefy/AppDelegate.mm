@@ -149,11 +149,11 @@
     
     [self.saveButton setEnabled:NO];
     
-    BOOL isDir;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
     NSString *path = [NSString stringWithFormat:@"%@/Applefy/%@", NSHomeDirectory(), [self.playlistButton.titleOfSelectedItem stringByReplacingOccurrencesOfString:@"/" withString:@" "]];
-    
+
+    BOOL isDir;
     if(![fileManager fileExistsAtPath:path isDirectory:&isDir]) {
         if(![fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:NULL]) {
             NSLog(@"Error: Create folder failed %@", path);
@@ -162,11 +162,9 @@
 
     NSURL *emptyMP3Path = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/5sec.mp3", [[NSBundle mainBundle] resourcePath]]];
     
-    NSNumber *playlistIndex = @(0);
+    int playlistIndex = 0;
     
     for (SPPlaylistItem *item in self.trackArrayController.arrangedObjects) {
-        
-        playlistIndex = @([playlistIndex intValue] + 1);
         
         if([item.item isKindOfClass:[SPTrack class]]) {
             
@@ -178,7 +176,7 @@
             NSUInteger year = track.album.year;
             NSUInteger num_track = track.trackNumber;
         
-            NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@ - %@.mp3", path, [playlistIndex stringValue], fileName]];
+            NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%d - %@.mp3", path, ++playlistIndex, fileName]];
             [[NSFileManager defaultManager] copyItemAtURL:emptyMP3Path toURL:fileMP3 error:nil];
             
             TagLib::FileRef f([[fileMP3 path] UTF8String]);
