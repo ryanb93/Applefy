@@ -161,33 +161,49 @@
     }
 
     NSURL *emptyMP3Path = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/5sec.mp3", [[NSBundle mainBundle] resourcePath]]];
-    
+
+    NSString *m3uFilePath = [NSString stringWithFormat:@"%@/%@.m3u",  path, [self.playlistButton.titleOfSelectedItem stringByReplacingOccurrencesOfString:@"/" withString:@" "]];
+    NSMutableString *m3uList = [[NSMutableString alloc]init];
+
     int playlistIndex = 0;
-    
+
     for (SPPlaylistItem *item in self.trackArrayController.arrangedObjects) {
         
         if([item.item isKindOfClass:[SPTrack class]]) {
             
             SPTrack *track = item.item;
             NSString *title = track.name;
-            NSString *fileName = [title stringByReplacingOccurrencesOfString:@"/" withString:@" "];
             NSString *artist = [[[track artists] objectAtIndex:0] name];
             NSString *album = track.album.name;
             NSUInteger year = track.album.year;
             NSUInteger num_track = track.trackNumber;
-        
-            NSURL *fileMP3 = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%d - %@.mp3", path, ++playlistIndex, fileName]];
-            [[NSFileManager defaultManager] copyItemAtURL:emptyMP3Path toURL:fileMP3 error:nil];
-            
-            TagLib::FileRef f([[fileMP3 path] UTF8String]);
+
+            NSString *mp3FilePath = [NSString stringWithFormat:@"%@/%d - %@.mp3", path, ++playlistIndex, [title stringByReplacingOccurrencesOfString:@"/" withString:@" "]];
+            NSURL *mp3FileURL = [NSURL fileURLWithPath:mp3FilePath];
+            [[NSFileManager defaultManager] copyItemAtURL:emptyMP3Path toURL:mp3FileURL error:nil];
+          
+            TagLib::FileRef f([[mp3FileURL path] UTF8String]);
             f.tag()->setTitle(NSStringToTagLibString(title));
             f.tag()->setArtist(NSStringToTagLibString(artist));
             f.tag()->setAlbum(NSStringToTagLibString(album));
             f.tag()->setTrack((int)num_track);
             f.tag()->setYear((int)year);
             f.save();
+            
+            
+            [m3uList appendString:[mp3FileURL path]];
+            [m3uList appendString:@"\n"];
+            
+
         }
     }
+    
+    NSError* error = nil;
+    
+    [m3uList writeToFile:m3uFilePath
+              atomically:YES
+                encoding:NSUTF8StringEncoding
+                   error:&error];
     
     [self.saveButton setEnabled:YES];
     [self showCompleteAlertWithPath:path];
