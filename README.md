@@ -3,6 +3,7 @@
 An OSX application to store Spotify playlists as MP3's that can be imported into iTunes to be matched by Apple Music.
 
 **Does not work if you have iTunes Match enabled**
+
 **5 second silent songs mean song could not be found in iTunes, delete and add manually**
 
 [<img src="http://i.imgur.com/Qy9A0VP.png" width="120px">  
