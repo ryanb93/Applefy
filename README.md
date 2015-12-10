@@ -1,4 +1,8 @@
-#Applefy
+# THIS IS A DEAD PROJECT THAT DOES NOT WORK
+
+Checkout [some of the forks](https://github.com/ryanb93/Applefy/network) for a possibly working versions. Maybe.
+
+# Applefy
 
 An OSX application to store Spotify playlists as MP3's that can be imported into iTunes to be matched by Apple Music.
 
